@@ -1,0 +1,137 @@
+.p-WatchData{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .taget-dat{
+        width: 350px;
+        height: 500px;
+        background: #fff;
+        position: relative;
+
+        .cnt-logo{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 51px;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo-o{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .cnt-inside{
+            width: 100%;
+            height: 100%;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .cnt-qrw{
+                width: 90px;
+                height: 90px;
+
+                .qwr{
+                    width: 100%;
+                    height: 100%;object-fit: contain;
+                }
+            }
+
+            .dtas-body{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+               
+                .c-label-ti{
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                .cnt-ins{
+                    padding-left: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 12.88px;
+                    gap: 7px;
+                    color: #767676;
+
+                    .detailBuy{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 12.88px;
+                        margin-top: 10px;
+                        gap: 7px;
+
+                        .detil-buy{
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+
+                        .addres-s{
+
+                            .mark{
+
+                            }
+                        }
+
+                        .total-buy{
+                            width: 194px;
+                            display: flex;
+                            justify-content: space-between;
+                            height: 30px;
+                            align-items: center;
+                            border-top: 1px solid #a5a3a3;
+
+                            .price{
+                                color: #df1683;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+
+                    .cnt-cardsVisa{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                       
+                        .methodPay{
+
+                        }
+                        .dtasCard-f{
+                            display: flex;
+                            gap: 10px;
+
+                            .cnt-visa{
+
+                                .visa-visa{
+
+                                }
+                            }
+
+                            .dtas-card{
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

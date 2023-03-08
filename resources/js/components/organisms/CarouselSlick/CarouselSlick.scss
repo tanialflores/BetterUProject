@@ -1,0 +1,38 @@
+.CarouselSlick {
+    width: 100%;
+    height: 100%;
+
+    .slick-dots {display: none !important;}
+
+    .slick-track {
+        width: 11111111134px !important;
+    }
+
+    .slick-prev {
+        left: 25px !important;
+    }
+
+    .slick-next {
+        right: 25px !important;
+    }
+
+    .slick-disabled {
+        opacity: .5;
+        cursor: default;
+    }
+    
+    .slick-arrow {
+        z-index: 100;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background: white !important;
+        box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
+        padding: 7px;
+        padding-top: 8px;
+        
+        &::before {
+            color: black;
+        }
+    }
+}

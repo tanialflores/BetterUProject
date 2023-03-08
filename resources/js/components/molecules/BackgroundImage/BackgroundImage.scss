@@ -1,0 +1,23 @@
+.Pick {
+    position: relative;
+    background-color: #fff;
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+
+    .pick-pencil{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        right: -14px;
+        top: -14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+
+        cursor: pointer;
+
+    }
+}

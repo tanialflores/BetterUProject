@@ -1,0 +1,39 @@
+.ProgressBarDinamic {
+    width: 66%;
+    height: 48px;
+    position: relative;
+
+    .barProgress {
+        height: 48px;
+        border: 1px solid #edebeb;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 4px;
+
+        .p-progressbar {
+            height: 100%;
+            border-radius: 30px;
+        }
+
+        .p-progressbar-value {
+            background: linear-gradient(
+                120deg,
+                #3a8dde 3%,
+                #8331a7 47%,
+                #df1683 100%
+            );
+
+            border-radius: 20px;
+            height: 80%;
+        }
+    }
+
+    .process {
+        color: #fff;
+        font-size: 16.56px;
+        position: absolute;
+        top: calc(50% - 9px);
+        left: calc(50% - 38px);
+    }
+}

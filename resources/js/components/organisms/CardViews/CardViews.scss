@@ -1,0 +1,237 @@
+.seect2-Compont {
+    padding: 33px 20px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+
+    .secct-2-cards {
+        position: relative;
+        width: 157px;
+        height: 271px;
+
+        &:hover {
+            background-color: rgba(223, 22, 131, 0.5) !important;
+            cursor: pointer;
+
+            .secct-2-btn-cont {
+                display: flex;
+            }
+        }
+
+        .secct-2-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .secct-2-cards-a {
+            height: 59px;
+            position: relative;
+
+            .secct-2-div-a {
+                padding: 10px 0px 10px 7px;
+                display: flex;
+                justify-content: space-between;
+
+                .secct-2-name {
+                    font-family: "Metropolis";
+                    font-size: 11.04px;
+                    color: #ffffff;
+                    text-decoration: none solid rgb(255, 255, 255);
+                }
+
+                .card-a-puntos {
+                    height: 27px;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            .secct-2-date {
+                font-family: "Metropolis";
+                font-size: 11.04px;
+                color: #ffffff;
+            }
+
+            .secct-2-share {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                top: 6px;
+                right: -135px;
+                width: 135px;
+                height: 33px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                background-color: #3b3b3b;
+                align-items: center;
+                transition: all 0.2s;
+
+                &.openModal {
+                    right: 0;
+                }
+
+                .secct-2-text {
+                    font-family: "Metropolis";
+                    font-size: 13.8px;
+                    color: #ffffff;
+                    text-decoration: none solid rgb(255, 255, 255);
+                    line-height: 37px;
+                }
+
+                .share {
+                    widows: 15px;
+                    height: 15px;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .secct-2-b {
+            width: 157px;
+            height: 150px;
+
+            .secct-2-bg-cont {
+                height: 100%;
+
+                .secct-2-bg-b {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .secct-2-c {
+            height: 59px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 7px;
+            gap: 4px;
+
+            .secct-2-c-title {
+                font-family: "Metropolis";
+                font-size: 10.12px;
+                font-weight: bold;
+                color: #fff;
+                margin-top: calc(61px - 31px);
+            }
+
+            .secct-2-heart {
+                width: 20px;
+                height: 20px;
+                margin-top: calc(61px - 31px);
+
+                &.likedFilter {
+                    filter: invert(28%) sepia(90%) saturate(6529%) hue-rotate(316deg) brightness(90%) contrast(94%);
+                }
+            }
+        }
+
+        .secct-2-btn-cont {
+            position: absolute;
+            top: calc(50% - 17px);
+            left: calc(50% - 36px);
+            width: 71px;
+            height: 29px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 30px;
+            font-size: 23px;
+            font-family: "Metropolis";
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .seect2-Compont {
+        .secct-2-cards {
+            width: 557px !important;
+            height: 963px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .secct-2-b {
+                width: 100%;
+                height: 524px;
+            }
+
+            .secct-2-cards-a {
+                padding: 35px 20px 0 34px !important;
+                .secct-2-name {
+                    font-weight: bold;
+                    font-size: 15.64px !important;
+                }
+                .secct-2-date {
+                    font-weight: bold;
+                    font-size: 16.56px !important;
+                    margin-top: 15px !important;
+                }
+
+                .card-a-puntos {
+                    height: 44px !important;
+                    top: -30px !important;
+                }
+            }
+
+            .secct-2-share {
+                width: 212px !important;
+                height: 52px !important;
+                
+
+                &.openModal {
+                    right: 30px !important;
+                    top: 10px !important;
+                }
+
+                .secct-2-text {
+                    font-size: 16.56px !important;
+                }
+
+                .share {
+                    height: 24px !important;
+                    width: 24px !important;
+                    padding-right: 0 !important;
+                }
+            }
+
+            .secct-2-c {
+                height: 72px !important;
+                justify-content: space-evenly !important;
+                padding: 0 35px !important;
+
+                .secct-2-c-title {
+                    font-size: 27.6px !important;
+                    margin-top: 0 !important;
+                }
+
+                .secct-2-heart {
+                    width: 30px !important;
+                    height: 30px !important;
+                    margin-top: 0 !important;
+                }
+            }
+
+            .secct-2-btn-cont {
+                top: calc(50% - 33px) !important;
+                left: calc(50% - 82px) !important;
+                width: 183px !important;
+                height: 51px !important;
+            }
+        }
+    }
+}
