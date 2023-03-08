@@ -1,0 +1,176 @@
+.FilterDestiny {
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .bg-color-white {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .back-filters {
+        display: flex;
+        width: 92%;
+        justify-content: space-between;
+        margin-bottom: 31px;
+    }
+
+    .card-filter {
+        width: 90%;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+        padding: 16px 10px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        .fsecct1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .fsecct-1-icons-t {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .ctn-img {
+                    width: 100%;
+                    height: 436px;
+                    border-radius: 15px;
+
+                    .item-state-img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 15px;
+                    }
+                }
+
+                .dateas-inof {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 26px;
+
+                    .title-state {
+                        font-size: 23px;
+                        color: #000000;
+                        font-weight: bold;
+                    }
+                    .fsecct-1-search {
+                        height: 48px;
+                    }
+                    .fsecct-1-categorys {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 28px;
+
+                        .fsecct-1-label {
+                            font-size: 16.56px;
+                            color: #3b3b3b;
+                            font-weight: 600;
+                        }
+
+                        .Categorys {
+                            gap: 26px;
+                        }
+                    }
+                }
+            }
+
+            .fsecct3 {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+
+                .Cardxx {
+                    width: 147px;
+                    margin-bottom: 20px;
+
+                    .CardsHome {
+                        height: 153px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .FilterDestiny {
+        .back-filters {
+            position: relative;
+
+            .FilterBar {
+                position: absolute;
+                bottom: -152px;
+                right: 15%;
+            }
+        }
+        .card-filter {
+            display: flex;
+            justify-content: center;
+            padding-top: 195px;
+
+            .fsecct1 {
+                width: 71%;
+                // width: 971px;
+                gap: 83px;
+                padding-bottom: 105px;
+
+                @media (min-width: 1001px) and (max-width: 1300px) {
+                    width: 90%;
+                }
+
+                .fsecct-1-icons-t {
+                    flex-direction: row;
+
+                    .ctn-img {
+                        width: 356px;
+                        height: 491px;
+                    }
+
+                    .dateas-inof {
+                        width: 572px;
+                        padding-top: 44px;
+
+                        .fsecct-1-categorys {
+                            .fsecct-1-label {
+                                font-weight: unset;
+                            }
+
+                            .Categorys {
+                                justify-content: flex-start;
+                                gap: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .fsecct3 {
+                    gap: 24px;
+
+                    .Cardxx {
+                        width: 211px;
+
+                        .CardsHome {
+                            height: 218px;
+                        }
+                        .solid {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.Search {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 4px 5px;
+
+    .Search2 {
+        width: 100%;
+        height: 100%;
+        padding: 0px 15px;
+        border-radius: 20px;
+        background-color: transparent;
+        box-shadow: inset 2px 1px 5px rgba(0, 0, 0, 0.12);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .search-input {
+            width: 100%;
+            height: 100%;
+            padding: 0px 15px;
+            background-color: transparent;
+            font-family: "Metropolis";
+            font-size: 12px;
+            outline: none;
+
+            &::placeholder{
+                opacity: 0.5;
+            }
+        }
+
+        .icon-ctn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+
+            .icon-lup {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

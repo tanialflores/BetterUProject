@@ -1,0 +1,118 @@
+.Address{
+    width: 100%;
+    padding: 75px 11px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @media (min-width: 1000px) {
+        padding: 75px 48px 0;
+    }
+
+    .backColor {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        height: 800px;
+        z-index: -1;
+        background: linear-gradient(
+            90deg,
+            #3a8dde 3%,
+            #8331a7 47%,
+            #df1683 100%
+        );
+
+        @media (min-width: 1000px) {
+            top: 0;
+        }
+
+        .backWhite {
+            width: 100%;
+            height: 578px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(
+                0deg,
+                #ffffff 0%,
+                rgba(255, 255, 255, 0) 100%
+            );
+        }
+    }
+
+    .TitleAddress{
+        height: 20px;
+        font-family:'Metropolis';
+        font-size: 20px;
+        color: #ffffff;
+        padding: 49px 23px;
+        text-align: center;
+        font-weight: 900;
+
+        @media (min-width: 1000px) {
+            padding: 0px 23px 46px;
+        }
+
+        .Return{
+            position: absolute;
+            top: 86px;
+            left: 10px;
+
+            @media (min-width: 1000px){
+                top: 39px;
+                left: 48px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .Address-Container{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: #ffffff;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        padding: 45px 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: space-between;
+
+        @media (min-width: 1000px){
+            height: 74vh;
+            display: flex;
+            flex-direction: column;
+            padding: 91px 81px;
+            align-items: center;
+        }
+
+        .Comp-Card{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .NewAddress{
+            width: 278px;
+            height: 40px;
+            border-radius: 20px;
+            background-image: linear-gradient(120deg, #3a8dde 3%, #8331a7 47%, #df1683 100% );
+            background-position: center center;
+            background-size: cover;
+            font-family: 'Metropolis';
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+}

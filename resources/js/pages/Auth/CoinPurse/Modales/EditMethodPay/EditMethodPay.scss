@@ -1,0 +1,48 @@
+.EditMethodPay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inside-EditMethodPay {
+        width: 355px;
+        height: 330px;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 36px 29px;
+
+        .titleMethod{
+            font-size: 14.72px;
+            color: #3b3b3b;
+            font-weight: bold;
+        }
+
+        .cnt-inpuT{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cnt-cnt-m{
+            display: flex;
+            gap: 19px;
+            margin-top: 30px;
+
+            .white{
+                width: 100%;
+                height: 40px;
+            }
+            .solid{
+                width: 100%;
+                height: 40px;
+            }
+        }
+    }
+}
