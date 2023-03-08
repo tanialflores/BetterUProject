@@ -1,0 +1,146 @@
+.ViewExperiences {
+    width: 100%;
+    padding-top: 76px;
+    background: linear-gradient(84deg, #3a8dde 3%, #8331a7 47%, #df1683 100%);
+    padding-bottom: 51px;
+
+    .w-baxk {
+        height: 63px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .wRecomendados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+
+        .w-reward-icon {
+            width: 76px;
+            height: 76px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon-rewards {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .txt-alkim {
+            font-size: 18.4px;
+            color: #ffffff;
+            font-weight: bold;
+            width: 204px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+
+    .crds-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin-top: 47px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ViewExperiences {
+        padding-top: unset;
+
+        @media (min-width: 1024px) and (max-width: 1300px) {
+            padding-top: 76px;
+        }
+
+        .w-baxk {
+            position: fixed;
+            padding: 39px 0 0 51px;
+        }
+
+        .wRecomendados {
+            padding-top: 60px;
+
+            .w-reward-icon {
+                width: 152px;
+                height: 152px;
+
+                .icon-rewards {
+                }
+            }
+        }
+        .crds-body {
+            width: 76.5%;
+            margin: 0 auto;
+            margin-top: 53px;
+            justify-content: flex-start;
+
+            .Cardxx {
+                // &:nth-child(2n) {
+                //     position: relative;
+                //     top: 26px;
+                // }
+                // @media (min-width: 1024px) and (max-width: 1197px) {
+                //     &:nth-child(3n - 1) {
+                //         position: relative;
+                //         top: 26px;
+                //     }
+                // }
+                @media (min-width: 1300px) and (max-width: 1568px) {
+                    &:nth-child(3n - 1) {
+                        position: relative;
+                        top: 26px;
+                    }
+                }
+                @media (min-width: 1569px) and (max-width: 1875px) {
+                    &:nth-child(2n) {
+                        position: relative;
+                        top: 26px;
+                    }
+                }
+                @media (min-width: 1876px) {
+                    &:nth-child(5n - 3) {
+                        position: relative;
+                        top: 26px;
+                    }
+                }
+
+                .container-values {
+                    .contn-prices {
+                        .item-price {
+                            color: #fff;
+                        }
+                        .item-price-real {
+                            color: #fff;
+                        }
+                    }
+
+                    .item-title {
+                        color: #fff;
+                    }
+
+                    .container-star {
+                        .item-values {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .prev-card {
+                &:nth-child(5n - 1) {
+                    position: relative;
+                    top: 26px;
+                }
+            }
+        }
+    }
+}

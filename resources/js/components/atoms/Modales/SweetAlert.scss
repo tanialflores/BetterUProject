@@ -1,0 +1,103 @@
+.InvalidAction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+
+    .cnt-img-g {
+        width: 116px;
+        height: 116px;
+    }
+
+    .container-invalidAction {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .title-inv {
+            font-size: 14.72px;
+            color: #3b3b3b;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .fw-light {
+            font-size: 12.88px;
+            color: #3b3b3b;
+            text-align: center;
+        }
+    }
+}
+
+.container-invalidAction{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.Affirmations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+
+    .cnt-img-g {
+        width: 116px;
+        height: 116px;
+    }
+
+    .title-inv {
+        font-size: 14.72px;
+        color: #3b3b3b;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .fw-light {
+        font-size: 12.88px;
+        color: #3b3b3b;
+        text-align: center;
+    }
+}
+
+.Succes-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+
+    .cnt-img-g {
+        width: 116px;
+        height: 116px;
+    }
+
+    .title-inv {
+        font-size: 14.72px;
+        color: #3b3b3b;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .fw-light {
+        font-size: 12.88px;
+        color: #3b3b3b;
+        text-align: center;
+    }
+}
+
+.btn-confirm-class {
+    width: 139px !important;
+    height: 40px !important;
+    border-radius: 20px !important;
+    font-size: 12.88px !important;
+    color: #ffffff !important;
+}
+
+.btn-cancel-class {
+    width: 139px !important;
+    height: 40px !important;
+    border: 1px solid #edebeb !important;
+    border-radius: 20px !important;
+    font-size: 12.88px !important;
+    color: #df1683 !important;
+}

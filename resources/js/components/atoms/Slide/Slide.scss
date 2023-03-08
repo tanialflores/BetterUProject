@@ -1,0 +1,64 @@
+.host-secct-3-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #faf7f7;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 10px;
+
+    .host-secct-3-question {
+        font-family: "Metropolis";
+        font-size: 12.88px;
+        color: #8a8a8a;
+        text-decoration: none solid rgb(138, 138, 138);
+        line-height: 20px;
+        width: 253px;
+    }
+
+    .host-secct-3-plus {
+        background-color: #df1683;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .host-secct-3-Icon {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .infoQuestion {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        transition: all 0.5s;
+        background-color: #fcf2f8;
+        color: black;
+        overflow: hidden;
+
+        border-radius: 20px;
+
+        padding: 0 22px;
+
+        &.closeModal {
+            height: 363px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .infoQuestion {
+        top: 80px !important;
+    }
+}

@@ -1,0 +1,55 @@
+.SearchMap {
+    margin-bottom: -72px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 700;
+    .InputSearch input{
+        padding: 0 13px !important;
+    }
+
+    .nameCity {
+        @media screen and (max-width: "1200px") {
+            width: 300px !important;
+        }
+        @media screen and (max-width: "478px") {
+            width: 300px !important;
+        }
+        @media screen and (max-width: "480px") {
+            width: 200px !important;
+        }
+        position: absolute;
+        top: -40px;
+        left: 0;
+        z-index: 700;
+        height: auto;
+        overflow-y: scroll;
+        width: 300px;
+        background-color: white;
+        border-radius: 10px;
+        // display: flex;
+        // flex-direction: column;
+        gap: 10px;
+
+        &::-webkit-scrollbar {
+            opacity: 1;
+            color: black;
+        }
+
+        .city {
+            height: 40px;
+            cursor: pointer;
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: rgba(220, 220, 220, 0.8);
+            }
+
+            span {
+                @media screen and (max-width: "480px") {
+                    font-size: 9px;
+                }
+                font-size: 11px;
+            }
+        }
+    }
+}

@@ -1,96 +1,65 @@
 import React, { useEffect, useState } from "react";
-import  ReactDOM  from 'react-dom'
-import { BrowserRouter as Router, useParams } from "react-router-dom";
-import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
-import "primereact/resources/primereact.min.css";                  //core css
-import "primeicons/primeicons.css";                                //icons
-//components
-import Auth from "../auth/Auth";
-import Guest from "../guest/Guest";
-// styles
-import "./MainRouter.scss"
-const MainRoute = () => {
-    // hooks :apuntando_hacia_abajo:
-    const [fakeAuth, setFakeAuth] = useState("false")
-    // util funcitons :apuntando_hacia_abajo:
-    const logIn = () => {
-        setFakeAuth("true");
-        localStorage.setItem("auth", "true");
-    }
-    const logOut = () => {
-        setFakeAuth("false");
-        localStorage.setItem("auth", "false");
-        window.location.href = "/"
-    }
-    const AuthFunctions = {
-        logIn: logIn,
-        logOut: logOut,
-    }
-    // useStates :apuntando_hacia_abajo:
-    useEffect(()=>
-    {
-        if(localStorage.getItem("auth")) {
-            if(localStorage.getItem("auth")=="true")
-            {
-                setFakeAuth("true")
-                localStorage.setItem("auth","true");
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Auth from "./Auth/Auth";
+import Guest from "./Guest/Guest";
+
+import "./MainRouter.scss";
+
+// prime react
+import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
+import "primereact/resources/primereact.min.css"; //core css
+import "primeicons/primeicons.css"; //icons
+
+export default function MainRoute() {
+
+    const [auth, setAuth] = useState(false)
+    const token = localStorage.getItem('authToken')
+
+    useEffect(() => {
+        // listener needed to block scroll when a modal is present
+        function checkDOMChange() {
+            if($(".openSideBar")[0]) {
+                
+                document.body.style.overflow = "hidden"
+            } else {
+                document.body.style.overflow = "auto"
             }
-            else
-            {
-                setFakeAuth("false")
-                localStorage.setItem("auth","false");
-            }
+
+            // call the function again after 100 milliseconds
+            setTimeout( checkDOMChange, 100 );
         }
-        else
-        {
-            localStorage.setItem("auth","false");
-        }
-    },[fakeAuth])
+        
+
+        checkDOMChange()
+    }, [])
+
+    // useStates 👇
+    useEffect(() => {
+        if(token) setAuth(true)
+    },[token])
+
     return (
         <main>
             <Router>
-                {fakeAuth=='true' ? (
+                {auth === true ? (
                     <>
-                        <Auth AuthFunctions={AuthFunctions} />
+                        <Auth AuthFunctions={setAuth} />
                     </>
                 ) : (
                     <>
-                        <Guest AuthFunctions={AuthFunctions}></Guest>
+                        <Guest AuthFunctions={setAuth} />
                     </>
                 )}
             </Router>
         </main>
     );
-};
-// export default MainRoute
+}
+
 if (document.getElementById("reactRoute")) {
     ReactDOM.render(
-        // <React.StrictMode>
         <MainRoute />,
         document.getElementById("reactRoute")
-        // </React.StrictMode>,
     );
-    }
-// if (document.getElementById('reactRoute')) {
-//     const Index = ReactDOM.createRoot(document.getElementById("reactRoute"));
-//     Index.render(
-//         <React.StrictMode>
-//             <MainRoute />
-//         </React.StrictMode>
-//     )
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

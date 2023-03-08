@@ -1,0 +1,54 @@
+.TmsCds {
+    width: 100%;
+    background-image: url(../../../assets/icons/fondodegradado.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+
+    .tm-title {
+        margin-top: 51px;
+        font-family: "Metropolis";
+        font-size: 18.4px;
+        color: #ffffff;
+        text-decoration: none solid rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .cards {
+        margin-top: 63px;
+        width: 335px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 28px 16px;
+        background-color: #fff;
+        // text-align: justify;
+
+        p {
+            font-family: "Metropolis";
+            font-size: 11.4px;
+            color: #8a8a8a;
+            text-decoration: none solid rgb(138, 138, 138);
+            line-height: 16px;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .TmsCds {
+        padding-top: 90px !important;
+        .tm-title {
+            font-size: 27.6px !important;
+        }
+        .cards {
+            width: 1455px !important;
+            padding: 78px 292px !important;
+
+            p {
+                font-size: 12.88px;
+            }
+        }
+    }
+}
