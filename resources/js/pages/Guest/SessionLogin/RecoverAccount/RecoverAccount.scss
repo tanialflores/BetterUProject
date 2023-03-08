@@ -1,0 +1,168 @@
+.RecoverAccount {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 65px;
+
+    .min-form {
+        padding: 0 20px;
+        width: 100%;
+        .rsecct1 {
+            .rsecct-1-titltles {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .rsecct-1-title {
+                    font-family: "Metropolis";
+                    font-size: 18.4px;
+                    color: #3b3b3b;
+                    line-height: 30px;
+                }
+                .rsecct-1-sub-title {
+                    font-family: "Metropolis";
+                    font-size: 12.88px;
+                    color: #8a8a8a;
+                    line-height: 1px;
+                    margin-top: 7px;
+                }
+            }
+
+            .rsecct-1-options {
+                margin-top: 28px;
+                display: flex;
+                justify-content: space-between;
+
+                .rsecct-1-active {
+                    // border-bottom-width: 1px;
+                    font-weight: bold;
+                    // border-style: solid;
+                    // border-color: #df1683;
+                    // background-size: cover;
+                    font-family: "Metropolis";
+                    font-size: 12.88px;
+                    // color: #df1683;
+                    cursor: pointer;
+                    text-align: center;
+                }
+
+                .c {
+                    width: 50%;
+                    border-bottom-width: 1px;
+                    border-style: solid;
+                    border-color: #df1683;
+                    background-size: cover;
+                    color: #df1683;
+                    padding-bottom: 10px;
+                }
+
+                .t {
+                    width: 50%;
+                    color: #8a8a8a;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .input-number {
+                display: none;
+
+                .phojek {
+                    font-family: "Metropolis";
+                    font-size: 12px;
+                    color: #8a8a8a;
+                    margin-bottom: 7px;
+                    padding-left: 34px;
+                }
+            }
+        }
+
+        .rsecct2 {
+            margin-top: 37px;
+            .rsecct-2-btns {
+                margin-top: 61px;
+                display: flex;
+                justify-content: space-between;
+
+                .white {
+                    width: 158px;
+                    height: 40px;
+                }
+
+                .degradado {
+                    width: 158px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .rsecct3 {
+            width: 100%;
+            margin-top: 63px;
+            display: flex;
+            justify-content: center;
+
+            .rsecct-3-networks {
+                .rsecct-3-title {
+                    font-family: "Metropolis";
+                    font-size: 11.4px;
+                    color: #8a8a8a;
+                    text-decoration: none solid rgb(138, 138, 138);
+                    text-align: center;
+                }
+                .rsecct-3-net {
+                    margin-top: 16px;
+                    display: flex;
+                    gap: 30px;
+
+                    .rsecct-3-card-net {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 15px;
+                        background-color: #ffffff;
+                        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .networks {
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .RecoverAccount {
+        padding-top: 90px !important;
+        .min-form {
+            width: 408px !important;
+
+            .rsecct-1-title {
+                font-weight: bold;
+            }
+
+            .rsecct-1-pas {
+                padding: 0px 55px !important;
+            }
+
+            .rsecct2 {
+                .rsecct-2-btns {
+                    gap: 20px !important;
+
+                    .white {
+                        width: 194px !important;
+                    }
+
+                    .degradado {
+                        width: 194px !important;
+                    }
+                }
+            }
+        }
+    }
+}

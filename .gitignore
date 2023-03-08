@@ -16,3 +16,13 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+/public/*
+!/public/.htaccess
+!/public/favicon.ico
+!/public/index.php
+!/public/robots.txt
+/run.sh
+composer.lock
+package-lock.json
+.rnd

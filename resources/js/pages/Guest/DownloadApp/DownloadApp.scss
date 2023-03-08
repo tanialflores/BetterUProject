@@ -1,0 +1,401 @@
+.DownloadApp {
+    background-image: url(../../../assets//icons/bgdownload.png);
+    width: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-top: 65px;
+
+    .dsecct1 {
+        width: 100%;
+        padding: 41px 20px;
+
+        .dseect-1-container-a {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .dsecct-1-logo {
+                width: 133px;
+                height: 115px;
+
+                .dsecct-1-alkimia {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .dsecct-1-download {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+
+                .dsecct-1-title {
+                    font-family: "Metropolis";
+                    font-size: 36.6px;
+                    color: #fff;
+                }
+            }
+
+            .dsecct-1-descrip {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .dsecct-1-sub {
+                    font-family: "Metropolis";
+                    font-size: 13.8px;
+                    color: #fff;
+                    margin-top: 10px;
+                }
+
+                .dsecct-1-text {
+                    font-family: "Abhaya Libre";
+                    font-size: 12.88px;
+                    color: #fff;
+                    margin-top: 10px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+            }
+
+            .dsecct-1-container-store {
+                margin-top: 23px;
+                display: flex;
+                gap: 16px;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .dsecct-1-apple {
+                width: 160px;
+                height: 67px;
+                object-fit: contain;
+            }
+
+            .dsecct-1-google {
+                width: 160px;
+                height: 67px;
+                object-fit: contain;
+            }
+        }
+
+        .dseect-1-container-b {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .dseect-1-phone {
+                position: relative;
+                width: 225px;
+                height: 400px;
+                // z-index: 1;
+
+                .MockUp {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .dsecct-1-video {
+                    position: absolute;
+                    top: 46px;
+                    left: 37px;
+                    width: 152px;
+                    height: 316px;
+                    border-radius: 10px;
+                    .dsecct-2-frame {
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .dsecct2 {
+        width: 100%;
+        height: 211px;
+
+        .dsecct-2-happy {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dsecct3 {
+        padding: 61px 20px 0 20px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dsecct-3-container-title {
+            margin-bottom: 30px;
+
+            .dsecct-3-title {
+                font-family: "Abhaya Libre";
+                font-size: 36.8px;
+                color: #df1683;
+                text-align: center;
+            }
+        }
+
+        .dsecct-3-descrip {
+            font-family: "Metropolis";
+            font-size: 12.88px;
+            color: #3b3b3b;
+            text-decoration: none solid rgb(59, 59, 59);
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .span-a {
+            margin-top: 15px;
+        }
+    }
+
+    .dsecct4 {
+        width: 100%;
+
+        .swiper {
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: 10px;
+                right: auto;
+                top: 64%;
+                color: #fff;
+                font-weight: bold;
+
+                &::after {
+                    font-size: 25px;
+                }
+            }
+
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev {
+                right: 10px;
+                left: auto;
+                top: 64%;
+                color: #fff;
+                font-weight: bold;
+
+                &::after {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .dsecct5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 26px 77px 26px;
+
+        .dsecct-5-sub {
+            margin-top: 101px;
+            width: 100%;
+
+            .dsecct-5-conta-title {
+                .dsecct-5-title {
+                    font-family: "Abril Fatface";
+                    font-size: 27.6px;
+                    color: #df1683;
+                    text-align: center;
+                    margin-bottom: 72px;
+                }
+            }
+
+            .dsecct-5-desc {
+                font-family: "Metropolis";
+                font-size: 15px;
+                color: #df1683;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            .marg {
+                margin-top: 20px;
+            }
+
+            .dsecct-5-cont-btn {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 66%;
+                margin-top: 72px;
+
+                .dsecct-5-sub-btn {
+                    width: 200px;
+
+                    .solid {
+                        height: 40px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .DownloadApp{
+        padding-top: 90px !important;
+    }
+    .dsecct1 {
+        display: flex;
+        justify-content: center;
+        gap: 210px;
+
+        .dseect-1-container-a {
+            width: 525px !important;
+
+            .dsecct-1-logo {
+                width: 215.28px !important;
+                height: 185.84px !important;
+            }
+
+            .dsecct-1-download {
+                margin-top: 29px !important;
+
+                .dsecct-1-title {
+                    font-size: 64.4px !important;
+                }
+            }
+
+            .dsecct-1-descrip {
+                margin-top: 27px !important;
+
+                .dsecct-1-sub {
+                    font-size: 27.6px !important;
+                }
+
+                .dsecct-1-text {
+                    font-size: 20.24px !important;
+                }
+            }
+
+            .dsecct-1-container-store {
+                margin-top: 89px !important;
+                justify-content: center !important;
+                gap: 30px !important;
+            }
+        }
+
+        .dseect-1-container-b {
+            width: 468px !important;
+            height: 835px !important;
+
+            .dseect-1-phone {
+                width: 468px !important;
+                height: 835px !important;
+
+                .dsecct-1-video {
+                    width: 313px !important;
+                    height: 657px !important;
+                    top: 98px !important;
+                    left: 79px !important;
+
+                    .dsecct-2-frame {
+                        border-bottom-left-radius: 29px !important;
+                        border-bottom-right-radius: 29px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .dsecct2 {
+        height: 1080px !important;
+    }
+
+    .dsecct3 {
+        margin-bottom: 80px !important;
+        .dsecct-3-container-title {
+            margin-top: 120px !important;
+
+            .dsecct-3-title {
+                font-size: 64.4px !important;
+            }
+        }
+
+        .dsecct-3-con {
+            display: flex;
+            justify-content: center;
+
+            .dsecct-3-sub {
+                width: 59%;
+
+                .dsecct-3-descrip {
+                    font-size: 27.6px !important;
+                    line-height: 35px !important;
+                }
+
+                .span-a {
+                    margin-top: 35px !important;
+                }
+            }
+        }
+    }
+
+    .dsecct4 {
+        .swiper {
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: 50px !important;
+                top: 50% !important;
+
+                &::after {
+                    font-size: 50px !important;
+                }
+            }
+
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev {
+                right: 50px !important;
+                left: auto !important;
+                top: 50% !important;
+                color: #fff;
+                font-weight: bold;
+
+                &::after {
+                    font-size: 50px !important;
+                }
+            }
+        }
+    }
+
+    .dsecct5 {
+        .dsecct-5-sub {
+            width: 70% !important;
+
+            .dsecct-5-title {
+                font-size: 46px !important;
+            }
+
+            .dsecct-5-desc {
+                font-size: 32.2px !important;
+                line-height: 55px !important;
+            }
+        }
+
+        .dsecct-5-cont-btn{
+            margin-bottom: 240px !important;
+
+            .dsecct-5-sub-btn{
+                width: 263px !important;
+
+                .solid{
+                    height: 60px !important;
+                    font-size: 27.6px !important;
+                }
+            }
+
+        }
+    }
+}

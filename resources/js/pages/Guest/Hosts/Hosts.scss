@@ -1,0 +1,374 @@
+.hosts {
+    width: 100%;
+    position: relative;
+    padding-top: 65px;
+
+    .responses {
+        font-family: "Metropolis";
+        font-size: 10.12px;
+        color: #3b3b3b;
+        text-decoration: none solid rgb(59, 59, 59);
+
+        text-align: justify;
+
+        .respo-a {
+            margin-top: 21px;
+            line-height: 20px;
+        }
+
+        .resp-list {
+            margin-left: 10px;
+
+            .repo-li {
+                line-height: 20px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .hosts-fir {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .host-secct1 {
+        background-color: #fff;
+        padding: 35px 21px 19px 21px;
+
+        .host-secct-1-A {
+            font-family: "Abril Fatface";
+            font-size: 18.4px;
+            color: #df1683;
+            text-decoration: none solid rgb(223, 22, 131);
+            line-height: 48px;
+        }
+
+        .host-secct-B-body {
+            font-family: "Metropolis";
+            font-size: 11.04px;
+            color: #3b3b3b;
+            text-decoration: none solid rgb(59, 59, 59);
+            line-height: 37px;
+            line-height: 20px;
+        }
+
+        .host-secct-c {
+            width: 100%;
+        }
+
+        .host-secct-b-sub {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+            font-family: "Metropolis";
+        }
+    }
+
+    .first-div-sep {
+        width: 100%;
+        height: 133px;
+    }
+
+    .host-secct2 {
+        padding: 40px 20px;
+        background: linear-gradient(
+            120deg,
+            #3a8dde 3%,
+            #8331a7 47%,
+            #df1683 100%
+        );
+
+        .host-secct-2-title {
+            font-family: "Abril Fatface";
+            font-size: 18.4px;
+            color: #ffffff;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .host-secct-2-body {
+            font-family: "Metropolis";
+            font-size: 13.8px;
+            color: #fff;
+            text-align: center;
+            margin-top: 31px;
+            line-height: 20px;
+        }
+
+        .host-secct-2-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+
+            .border {
+                width: 192px;
+                height: 40px;
+            }
+        }
+    }
+
+    .host-secct3 {
+        background-color: #fff;
+
+        .host-secct-3-photo {
+            height: 618px;
+            width: 100%;
+
+            .host-secct-3-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .host-secct-3-B {
+            padding: 34px 20px;
+
+            .host-secct-3-title {
+                font-family: "Abril Fatface";
+                font-size: 18.4px;
+                color: #df1683;
+                text-decoration: none solid rgb(223, 22, 131);
+                line-height: 20px;
+                text-align: center;
+            }
+
+            .host-secct-3-arrowUp {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .host-secct-3-scroll {
+                margin-top: 35px;
+                height: 533px;
+                background-color: #fff;
+                overflow: auto;
+
+                .swiper {
+                    height: 100%;
+                    width: 100%;
+                    overflow: auto;
+
+                    .swiper-button-prev,
+                    .swiper-rtl .swiper-button-next {
+                        display: none;
+                    }
+
+                    .swiper-button-next,
+                    .swiper-rtl .swiper-button-prev {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .host-secct4 {
+        margin: 55px 0;
+        padding: 0 13px;
+
+        .host-secct-4-form {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 22px 8px 69px 8px;
+
+            .host-secct-4-title {
+                font-family: "Abril Fatface";
+                font-size: 27.6px;
+                color: #df1683;
+                text-decoration: none solid rgb(223, 22, 131);
+                line-height: 48px;
+                text-align: center;
+            }
+
+            .host-secct-4-descrip {
+                font-family: "Metropolis";
+                font-size: 12.88px;
+                color: #3b3b3b;
+                text-decoration: none solid rgb(59, 59, 59);
+                line-height: 20px;
+                padding: 0 21px;
+            }
+
+            .host-secct-4-btn {
+                width: 180px;
+                margin-top: 45px;
+
+                .solid {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .hosts {
+        padding-top: 90px !important;
+
+        .responses {
+            font-size: 14.72px !important;
+
+            .respo-a {
+                margin-top: 21px;
+                line-height: 20px;
+            }
+
+            .resp-list {
+                margin-left: 10px;
+
+                .repo-li {
+                    line-height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .host-secct1 {
+            .host-secct-1-A {
+                font-size: 46px !important;
+                text-align: center;
+                margin-top: 116px !important;
+            }
+
+            .host-secct-1-B {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 463px;
+                margin-top: 83px;
+            }
+
+            .host-secct-B-body {
+                font-size: 23px !important;
+                margin-top: 43px !important;
+            }
+
+            .host-secct-c {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 23px;
+                margin-bottom: 123px;
+            }
+
+            .host-secct-b-sub {
+                width: 50%;
+                margin-top: 43px !important;
+                line-height: 37px !important;
+            }
+        }
+
+        .first-div-sep {
+            height: 685px !important;
+        }
+
+        .host-secct2 {
+            padding: 135px 195px 115px 195px !important;
+            .host-secct-2-title {
+                font-size: 46px !important;
+            }
+
+            .host-secct-2-body {
+                font-size: 32.2px !important;
+                line-height: 55px !important;
+                margin-top: 35px !important;
+            }
+
+            .border {
+                height: 60px;
+                font-size: 21.16px !important;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #df1683;
+                }
+            }
+        }
+
+        .host-secct3 {
+            display: flex;
+
+            .host-secct-3-photo {
+                width: 40% !important;
+                height: 1077px !important;
+            }
+
+            .host-secct-3-B {
+                width: 60%;
+
+                .host-secct-3-title {
+                    font-size: 41.4px !important;
+                    margin-bottom: 84px !important;
+                }
+
+                .host-secct-3-arrow {
+                    width: 78px !important;
+                    height: 78px !important;
+                }
+
+                .host-secct-3-scroll {
+                    margin-top: 35px !important;
+                    height: 759px !important;
+                    padding: 0px 100px !important;
+
+                    .host-secct-3-card {
+                        height: 79px !important;
+                        margin-bottom: 30px !important;
+
+                        .host-secct-3-question {
+                            font-size: 16.56px !important;
+                            font-weight: bold !important;
+                            width: 100% !important;
+                        }
+
+                        .host-secct-3-plus {
+                            width: 41px !important;
+                            height: 41px !important;
+
+                            .host-secct-3-Icon {
+                                width: 27px !important;
+                                height: 27px !important;
+                            }
+                        }
+                    }
+                }
+
+                .dow {
+                    margin-top: 34px !important;
+                }
+            }
+        }
+
+        .host-secct4 {
+            display: flex;
+            justify-content: center;
+            .host-secct-4-form {
+                width: 761px !important;
+                padding: 104px 104px 79px 104px !important;
+                .host-secct-4-title {
+                    font-size: 46px !important;
+                }
+
+                .host-secct-4-descrip {
+                    margin-top: 38px !important;
+                    margin-bottom: 41px !important;
+                    font-size: 18.4px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.CardSmall-lo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // height: 100%;
+    overflow: auto;
+    padding: 5px;
+
+    @media (min-width: 1000px) {
+        // align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .inside-card {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        height: 139px;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        padding: 16px 11px;
+        cursor: pointer;
+
+        @media (min-width: 1000px) {
+            width: 334px;
+        }
+
+        .img-item {
+            width: 113px;
+            height: 116px;
+            border-radius: 15px;
+
+            .img-small {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        .item-cnt {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding-top: 11px;
+            font-family: "Metropolis";
+            font-size: 12.88px;
+            color: #3b3b3b;
+            height: 100%;
+
+            .item-date {
+                font-family: "Metropolis";
+                font-size: 13.88px;
+                color: #8a8a8a;
+            }
+
+            .item-cancel {
+                font-family: "Metropolis";
+                font-size: 13.88px;
+                color: #de0b0b;
+            }
+
+            .cnt-btns {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                .btn-btns {
+                    width: 95px;
+                    height: 35px;
+                    border-radius: 20px;
+                    background-color: #df1683;
+                    font-family: "Metropolis";
+                    font-size: 14px;
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    &:hover{
+                        opacity: 0.6;
+                    }
+
+                    &.expercv1{
+                        width: 122px;
+                    }
+
+                    &.dissable {
+                        background-color: #bababa;
+                        pointer-events: none;
+                    }
+
+                    @media (min-width: 1000px) {
+                        width: 95px;
+                    }
+                }
+
+                .circle-sell {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 20px;
+                    background-color: #df1683;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &.dissable {
+                        background-color: #bababa;
+                        pointer-events: none;
+                    }
+                }
+
+                .circle-comment {
+                    width: 66px;
+                    height: 35px;
+                    border-radius: 20px;
+                    background-color: #df1683;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &.dissable {
+                        background-color: #bababa;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}

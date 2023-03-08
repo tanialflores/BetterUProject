@@ -1,0 +1,270 @@
+.AuthLayout {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .AuthSider {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        display: flex;
+        transition: all 0.5s;
+        height: 100vh;
+
+        &.openSideBar {
+            left: 0;
+        }
+    }
+
+    .container-black {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 101;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        transition: all 0.5s;
+
+        .container-white {
+            width: 417px;
+            height: 100vh;
+            background: #ffffff;
+            box-shadow: 2px 2px 15px rgb(0 0 0 / 15%);
+            width: 22%;
+            padding: 0 39px;
+
+            .wsecct1 {
+                padding: 81px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 43px;
+
+                .wsecct-1 {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: calc(100% - 69%);
+
+                    .wsecct-1-label {
+                        font-family: "Metropolis";
+                        font-size: 16.56px;
+                        color: #3b3b3b;
+                        font-weight: 600;
+                    }
+                    .wsecct-1-img {
+                        width: 40px;
+                        height: 40px;
+                        fill: #faf7f7;
+                        border-radius: 50%;
+                        box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+
+                .wsecct-1-parte2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 11px;
+
+                    .part2-label {
+                        font-size: 11.04px;
+                        color: #8a8a8a;
+                        text-align: center;
+                    }
+
+                    .part-2-cnt {
+                        width: 100%;
+                        font-family: "Metropolis";
+                        font-size: 9.2px;
+                        color: #8a8a8a;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            .wsecct2 {
+                margin-top: 36px;
+
+                .wsecct-1-title {
+                    font-size: 16.56px;
+                    color: #3b3b3b;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .wsecct-2-part1 {
+                    margin-top: 12px;
+
+                    .part-1-click {
+                        display: flex;
+                        gap: 15px;
+                        align-items: center;
+
+                        .part-1-cnt-img {
+                            width: 60px;
+                            height: 60px;
+                            fill: #ffffff;
+                            box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+
+                            .part-icon {
+                                filter: invert(26%) sepia(73%) saturate(7495%)
+                                    hue-rotate(316deg) brightness(90%)
+                                    contrast(93%);
+                            }
+                        }
+
+                        .part-1-turis {
+                            font-size: 12.88px;
+                            color: #8a8a8a;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .click-2 {
+                        margin-top: 44px;
+                    }
+
+                    .part-1-array {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 23px;
+                        gap: 28px;
+
+                        .array-ctn {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 11px;
+                            cursor: pointer;
+
+                            .array-iconss {
+                                width: 60px;
+                                height: 60px;
+                                background: #ffffff;
+                                box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .array-txt {
+                                font-size: 12.88px;
+                                color: #8a8a8a;
+                            }
+                        }
+                    }
+                }
+
+                .ctn-btn {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 42px;
+
+                    .degradado {
+                        width: 278px;
+                        height: 40px;
+                        font-size: 12.88px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        &.closeSider {
+            right: 0;
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .AuthLayout {
+        display: grid;
+        grid-template-columns: 368px 1fr;
+        grid-template-rows: 69px 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        .AuthSider {
+            z-index: 100;
+            grid-area: 1 / 1 / 6 / 2;
+            background: #fff;
+            position: static;
+        }
+        .AuthHeader {
+            grid-area: 1 / 2 / 2 / 6;
+        }
+        .AuthView {
+            grid-area: 2 / 2 / 3 / 3;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+
+            // &.newClassAuthView{
+                
+            // }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .AuthLayout {
+        .container-black {
+            .container-white {
+                width: 323px;
+                padding: 0 18px;
+                display: flex;
+                flex-direction: column;
+                overflow: auto;
+
+                .wsecct1 {
+                    position: relative;
+                    justify-content: center;
+
+                    .wsecct-1{
+                        justify-content: center;
+                    }
+                    
+
+                    .wsecct-1-img {
+                        position: absolute;
+                        right: 0;
+                        top: 13px;
+                    }
+                }
+
+                .wsecct2{
+                    overflow: auto;
+                    height: 100%;
+                    padding-bottom: 40px;
+                    
+                    
+                }
+            }
+        }
+    }
+}
