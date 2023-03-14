@@ -219,6 +219,7 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 30px;
+        gap: 50px;
 
         .secct2-card {
             margin: 5px;
@@ -253,12 +254,7 @@
 
     .secct-3 {
         width: 100%;
-        background: linear-gradient(
-            120deg,
-            #3a8dde 3%,
-            #8331a7 47%,
-            #df1683 100%
-        );
+        background: #ffffff;
 
         padding: 25px 20px 32px 20px;
         display: flex;
@@ -273,7 +269,7 @@
         .secct3-title {
             font-family: "Metropolis";
             font-size: 18.4px;
-            color: #ffffff;
+            color: #000;
             text-align: center;
             margin-bottom: 15px;
         }
@@ -281,7 +277,7 @@
         .secct3-subTitle {
             font-family: "Metropolis";
             font-size: 11.04px;
-            color: #fff;
+            color: #000;
             line-height: 20px;
             text-align: justify;
         }
@@ -857,15 +853,17 @@
 
     .secct-3 {
         flex-direction: row !important;
+        gap: 71px;
+
 
         .secct-3-device {
             position: relative !important;
-            left: -225px;
+            left: 23px;
             transition: all 0.5s;
 
             .secct-3-phone {
-                height: 772px !important;
-                width: 697px !important;
+                height: 400px !important;
+                width: 450px !important;
             }
         }
 
