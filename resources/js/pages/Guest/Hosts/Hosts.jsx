@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 //Assets 😁
-import FondoA from "../../../assets/icons/fono.jpg";
+import autocuidado from "../../../assets/guest/autocuidado.jpg";
 import Plus from "../../../assets/icons/plus.svg";
 import Don from "../../../assets/icons/Don.jpeg";
 
@@ -1107,14 +1107,12 @@ const Hosts = () => {
 
     return (
         <div className="hosts">
-            <img src={FondoA} alt="fondoA" className="hosts-fir" />
+            <img src={autocuidado} alt="fondoA" className="hosts-fir" />
             <div className="host-secct1">
-                <div className="host-secct-1-A">¿Qué es ser anfitrión?</div>
+                <div className="host-secct-1-A">Tips</div>
                 <div className="host-secct-1-B">
-                    <p className="host-secct-B-body">
-                        Ser anfitrión es formar parte de una comunidad dedicada
-                        a atender la necesidades de nuestr@s alkimistas, y crear
-                        siempre "experiencias mágicas".
+                    <p className="host-secct-body">
+                        Consejos para el autocuidado
                     </p>
                     <p className="host-secct-B-body">
                         Un anfitrión de ALKIMIA es un proveedor de servicios

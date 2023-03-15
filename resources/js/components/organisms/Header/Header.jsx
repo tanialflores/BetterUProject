@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 //Assets
-import Alkimia from "../../../assets/icons/Alkimia.png";
-import AlkimiaColor from "../../../assets/icons/alkimiaColor.png";
+import logoSinFondo from "../../../assets/guest/logoSinFondo.png"
 import Menu from "../../../assets/icons/menu.svg";
-import MenuColor from "../../../assets/icons/menuColor.svg";
 import Close from "../../../assets/icons/close.svg";
-
 import "./Header.scss";
 import Button from "../../atoms/Button/Button";
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
@@ -58,7 +55,7 @@ const Header = ({ className }) => {
                 <div>
                     <NavLink to={"/"}>
                         <img
-                            src={url.pathname === "/" ? Alkimia : AlkimiaColor}
+                            src={logoSinFondo}
                             alt="Logo"
                             className="Header-logo"
                         />
@@ -103,14 +100,14 @@ const Header = ({ className }) => {
                                     to="/hosts"
                                     style={navLinks}
                                 >
-                                    Anfitriones
+                                    Tips
                                 </NavLink>
                                 <NavLink
                                     className="linkA"
                                     to="/blog"
                                     style={navLinks}
                                 >
-                                    Blog
+                                    Directorio
                                 </NavLink>
                             </div>
                             <div className="side-btns">
@@ -149,10 +146,10 @@ const Header = ({ className }) => {
                             Inicio
                         </NavLink>
                         <NavLink className="linkA" to="/hosts" style={navLinks}>
-                            Anfitriones
+                            Tips
                         </NavLink>
                         <NavLink className="linkA" to="blog" style={navLinks}>
-                            Blog
+                            Directorio
                         </NavLink>
                     </div>
                     <div className="h-return">
