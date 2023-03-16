@@ -4,7 +4,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 //Assets 😁
 import autocuidado from "../../../assets/guest/autocuidado.jpg";
 import Plus from "../../../assets/icons/plus.svg";
-import Don from "../../../assets/icons/Don.jpeg";
+import dudas from "../../../assets/guest/dudas.jpg";
 
 //Styles 😊
 import "./Hosts.scss";
@@ -79,1027 +79,113 @@ const Hosts = () => {
     const questions = [
         {
             id: 1,
-            question: "¿Cómo registro mi negocio?",
+            question: "¿Son los trastornos mentales un tipo de discapacidad intelectual o daño cerebral?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    No. Son desajustes de salud como cualquier otro, como el asma, la diabetes o los problemas del corazón. A diferencia de la discapacidad psíquica o la demencia, el trastorno mental no disminuye ni deteriora las facultades mentales, sino que las altera de forma esporádica.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 2,
-            question: "¿Debo pagar para estar en ALKIMIA?",
+            question: "¿Un trastorno mental es incuarble? ¿Dura toda la vida?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    No. La mayoría nos recuperamos después de un tratamiento adecuado y llevamos una vida normalizada. 
+                    Existen trastornos mentales graves que pueden convertirse en crónicos y, por lo tanto, requerir un tratamiento continuado. Igual que pasa con las enfermedades físicas, que pueden ser crónicas o transitorias, el trastorno mental puede ser llevado de forma que la persona pueda disfrutar de una vida plena y satisfactoria.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 3,
-            question: "¿Cuál es el costo de los servicios o productos?",
+            question: "¿Las personas con un trastorno mental podemos llevar una vida normalizada?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    Sí. ¡Podemos! Con el tratamiento adecuado y con un entorno social y familiar favorable, una persona con un problema de salud puede superar las limitaciones del trastorno y puede trabajar, mantener relaciones sociales, cuidar de sus hijos, etc.
+                    A pesar de que algunas personas podemos llegar a recibir la incapacitación laboral por razón de salud mental, la mayoría de nosotros somos capaces de llevar a cabo muchas tareas.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 4,
-            question: "¿Cómo sé si alguien hizo una reserva?",
+            question: "¿Se nace con el trastorno mental?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    No. La predisposición genética puede ser uno de los factores que inciden en la aparición de algunos trastornos mentales. Pero también hay factores ambientales que influyen, como el estrés, el consumo de drogas, traumatismos cerebrales, enfermedades orgánicas, un acontecimiento traumático o una situación de crisis económica.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 5,
-            question: "¿Cómo puedo vender mis productos?",
+            question: "¿Todo el mundo puede desarrollar un trastorno mental?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    Sí. Todo el mundo es vulnerable de tener problemas de salud mental, como de sufrir cualquier otra enfermedad. Una de cada cuatro personas tendrá un trastorno mental a lo largo de su vida. Por eso es importante hablar abiertamente, porque reduce el estigma y ayuda a poner remedio cuando aparece.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 6,
-            question: "¿Quién administra la página de mi negocio?",
+            question: "¿Las personas con trastorno mental son violentas?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    No. Las personas que sufrimos un trastorno mental no tenemos más conductas violentas que el resto de la población. De hecho, tenemos más probabilidad de ser víctimas que autoras de actos violentos.
+                    Además, normalmente evitamos las situaciones violentas, porque nos generan un estrés excesivo. La mayoría de los crímenes violentos y homicidios son cometidos por personas que no tienen ningún trastorno mental. Tener un carácter agresivo es independiente del sufrimiento de un trastorno mental.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 7,
-            question: "¿Puedo elegir las fotos que aparecen en mi página?",
+            question: "¿Las personas con problemas de salud mental tienen que estar recluidas en centros psiquiátricos?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    No. Muchas recuperaciones y tratamientos no necesitan hospitalización y, en caso necesario, los ingresos son temporales. Los centros psiquiátricos, en la actualidad, ya no son instituciones de aislamiento e internamiento.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 77,
-            question: "¿Puedo elegir las fotos que aparecen en mi página?",
+            question: "¿Es el estigma uno de los principales problemas para las personas que tenemos un trastorno mental?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    Sí. Una de las barreras más importantes para recuperarse de un trastorno mental es afrontar las actitudes negativas de la gente. Eso a menudo supone aislamiento social y discriminación por el solo hecho de haber tenido un trastorno.
+                    Una actitud positiva y de apoyo por parte de familiares, amigos, compañeros de trabajo, servicios de salud, profesionales y otros miembros de la comunidad hacia la gente con trastorno mental es vital para asegurar su calidad de vida y su recuperación.
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
         {
             id: 8,
-            question: "¿Cómo añadir servicios o productos a mi página?",
+            question: "¿Cómo puedo ayudar a una persona con trastorno mental?",
             icon: Plus,
             respose: (
                 <div className="responses">
                     <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
+                    Hay muchas maneras de ayudar a una persona que está pasando por un problema de salud mental. Uno de los primeros pasos es hacerle saber que puede hablar abiertamente de este tema contigo. 
                     </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 9,
-            question: "¿Qué pasa si necesito cancelar una reserva/venta?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 10,
-            question: "¿Qué pasa si alguien cancela su reserva/compra?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 11,
-            question: "¿Cómo se define el calendario de cada anfitrión?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 12,
-            question: "¿En qué divisa se muestran los precios?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 13,
-            question: "¿ALKIMIA me ayuda a crear mis experiencias?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 14,
-            question: "¿Puedo ser anfitrión si sólo ofrezco catas?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 15,
-            question: "¿Puedo ser anfitrión si doy tours guiados?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 16,
-            question: "¿ALKIMIA hace la gestión de envío de productos?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            ),
-        },
-        {
-            id: 17,
-            question: "¿Quién paga el envío de mis ventas online?",
-            icon: Plus,
-            respose: (
-                <div className="responses">
-                    <p className="respo-a">
-                        Un anfitrión es un proveedor de servicios y productos de
-                        calidad contrastada que estén relacionados directamente
-                        con el turismo enogastronómico en todo el territorio
-                        mexicano. Ser anfitrión es formar parte de una comunidad
-                        dedicada a atender las necesidades de nuestr@s
-                        alkimistas, y guiarlos hacia las “experiencias mágicas”.
-                    </p>
-                    <p style={{ lineHeight: 2 }}>Decálogo del anfitrión:</p>
-                    <div>
-                        <ul className="resp-list">
-                            <li className="repo-li">
-                                Ponga en valor y promocione los productos
-                                agroalimentarios de su región.
-                            </li>
-                            <li className="repo-li">
-                                Abogue por la gastronomía local y tradicional.
-                            </li>
-                            <li className="repo-li">
-                                Conozca y valore los recursos turísticos de su
-                                entorno.
-                            </li>
-                            <li className="repo-li">
-                                Sea un embajador activo de la cultura,
-                                artesanías y tradiciones mexicanas.
-                            </li>
-                            <li className="repo-li">
-                                Defienda los ODS en sus prácticas turísticas.
-                            </li>
-                            <li className="repo-li">
-                                Ofrezca servicios de calidad.
-                            </li>
-                            <li className="repo-li">
-                                Tenga la honestidad por bandera.
-                            </li>
-                            <li className="repo-li">
-                                Posibilite experiencias inmersivas a los
-                                viajeros.
-                            </li>
-                            <li className="repo-li">
-                                Crea momentos mágicos para visitantes.
-                            </li>
-                            <li className="repo-li">
-                                Que lo promocionado y lo ofertado sean
-                                consecuentes en forma, tiempo y precio.
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             ),
         },
@@ -1135,7 +221,7 @@ const Hosts = () => {
             <div className="host-secct2">
                 <div>
                     <h4 className="host-secct-2-title">
-                        ¿Quieres ser anfitrión?
+                        ¿Quiéres realizar el test?
                     </h4>
                     <p className="host-secct-2-body">
                         Conviértete en anfitrión y deja que miles de alkimistas
@@ -1156,11 +242,11 @@ const Hosts = () => {
 
             <div className="host-secct3">
                 <div className="host-secct-3-photo">
-                    <img src={Don} alt="fondo" className="host-secct-3-img" />
+                    <img src={dudas} alt="fondo" className="host-secct-3-img" />
                 </div>
                 <div className="host-secct-3-B">
                     <h3 className="host-secct-3-title">
-                        ¿Preguntas más comunes de Anfitriones?
+                        Preguntas más comunes
                     </h3>
 
                     <div className="host-secct-3-scroll">
