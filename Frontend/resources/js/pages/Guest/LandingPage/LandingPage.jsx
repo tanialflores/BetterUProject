@@ -3,14 +3,15 @@ import InputSearch from "../../../components/atoms/InputSearch/InputSearch";
 import Button from "../../../components/atoms/Button/Button";
 
 //assets
-import Arrow from "../../../assets/icons/arrow.svg";
-import Apoyo from "../../../assets/icons/apoyo.svg";
-import Grape from "../../../assets/icons/grape.svg";
+import trastornoAlimenticio from "../../../assets/guest/trastornoAlimenticio.png";
+import depresion from "../../../assets/guest/depresion.png";
+import ansiedad from "../../../assets/guest/ansiedad.png";
 import Shape from "../../../assets/icons/Shape.svg";
 import Pago from "../../../assets/icons/pago.svg";
 import Phone from "../../../assets/icons/phoneA.png";
-import Vino from "../../../assets//icons/vino.png";
-import LogoColor from '../../../assets/icons/logob.png'
+import back from "../../../assets/guest/back.png";
+import LogoColor from '../../../assets/icons/logob.png';
+import logoSinFondo from "../../../assets/guest/logoSinFondo.png"
 
 import Bed from "../../../assets//icons/test/034-bed.svg";
 import Vela from "../../../assets//icons/test/Combined Shape.svg";
@@ -85,31 +86,24 @@ const LandingPage = () => {
     const helpTravel = [
         {
             id: 1,
-            img: Grape,
-            title: "Viñedos Mexicanos",
+            img: depresion,
+            title: "Depresión",
             descriptions:
-                "Encuentra cientos de experiencias de enoturismo en todo México",
+                "La depresión es una enfermedad que se caracteriza por una tristeza persistente y por la pérdida de interés en las actividades con las que normalmente se disfruta, así como por la incapacidad para llevar a cabo las actividades cotidianas, durante al menos dos semanas.",
         },
         {
             id: 2,
-            img: Shape,
-            title: "Arma tu ruta",
+            img: ansiedad,
+            title: "Ansiedad",
             descriptions:
-                "Comienza a crear tus propias rutas con nuestras sugerencias de experiencias cercanas a tu destino",
+                "La ansiedad es una emoción normal que se experimenta en situaciones en las que el sujeto se siente amenazado por un peligro externo o interno.",
         },
         {
             id: 3,
-            img: Pago,
-            title: "Pago seguro",
+            img: trastornoAlimenticio,
+            title: "Trastorno alimenticio",
             descriptions:
-                "Reserva y paga desde la app con un proceso fácil y confiable",
-        },
-        {
-            id: 4,
-            img: Apoyo,
-            title: "Soporte",
-            descriptions:
-                "Si necesitas ayuda nuestros expertos estarán disponibles todo el tiempo para guiarte a los mejores destinos",
+                "Los trastornos de la alimentación, también llamados trastornos de la conducta alimentaria, son enfermedades médicas graves con una influencia biológica que se caracterizan por alteraciones graves de las conductas alimentarias.",
         },
     ];
 
@@ -519,98 +513,33 @@ const LandingPage = () => {
     return (
         <>
             <div className="LandingPage">
+                <div className="secct-3">
+                    <div className="secct-3-device" id="secct-3-device">
+                        <img
+                            src={logoSinFondo}
+                            alt="phone"
+                            className="secct-3-phone"
+                        />
+                    </div>
+                    <div className="secct-3-container">
+                        <h3 className="secct3-title">Bienvenido a Better U</h3>
+                        <p className="secct3-subTitle">
+                        El test de Better U te ayudará a arrojar luces sobre la 
+                        existencia de un eventual problema psicológico para poder a orientarte a buscar 
+                        ayuda cuando sea necesario.
+                        </p>
+                        <p className="secct3-subTitle">
+                            
+                        </p>
+                    </div>
+                </div>
                 <div className="subLandingPage">
                     <img
-                        src={Vino}
+                        src={back}
                         alt="background"
                         className="sub-background"
                     />
                     <div className="sub-filter-img">
-                        <InputSearch
-                            classInput={"input"}
-                            className={"inputsearch"}
-                            sizeLup={"tamanio"}
-                            placeholder={"¿Cual es tu siguiente destino?"}
-                        />
-                        <div className="landing-btn-search">
-                            <div
-                                className="btn-select"
-                                onClick={() => {
-                                    setOpenPlace(!openPlace);
-                                    setOpenCategory(false);
-                                }}
-                            >
-                                <p className="select-pick">Destino</p>
-                                <img
-                                    src={Arrow}
-                                    alt="arrow"
-                                    className="arrow"
-                                />
-                            </div>
-                            <div
-                                className="btn-select"
-                                onClick={() => {
-                                    setOpenCategory(!openCategory);
-                                    setOpenPlace(false);
-                                }}
-                            >
-                                <p className="select-pick">Categoría</p>
-                                <img
-                                    src={Arrow}
-                                    alt="arrow"
-                                    className="arrow"
-                                />
-                            </div>
-                            <div className="btn-select btns">
-                                <Button
-                                    btnTitle={"Buscar"}
-                                    className={"solid"}
-                                />
-                            </div>
-                            <div
-                                className={`place-selct-pick ${
-                                    openPlace && "place-hidden"
-                                }`}
-                            >
-                                {destPlace.map((place) => (
-                                    <div key={place.id} className="place-pick">
-                                        <input
-                                            type="checkbox"
-                                            className="checkBox"
-                                            onClick={() =>
-                                                updateCheckboxPlace(items.id)
-                                            }
-                                        />
-                                        <p className="p-placePick">
-                                            {place.place}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                            <div
-                                className={`category-selct-pick ${
-                                    openCategory && "category-hidden"
-                                }`}
-                            >
-                                {category.map((item) => (
-                                    <div
-                                        key={item.id}
-                                        className="category-pick"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            className="checkBoxCat"
-                                            onClick={() =>
-                                                updateCheckboxCategory(item.id)
-                                            }
-                                        />
-                                        <p className="p-categoryPick">
-                                            {item.category}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div className="page-secct2">
@@ -625,108 +554,6 @@ const LandingPage = () => {
                             <p className="secct2-desc">{item.descriptions}</p>
                         </div>
                     ))}
-                </div>
-                <div className="secct-3">
-                    <div className="secct-3-device" id="secct-3-device">
-                        <img
-                            src={Phone}
-                            alt="phone"
-                            className="secct-3-phone"
-                        />
-                    </div>
-                    <div className="secct-3-container">
-                        <h3 className="secct3-title">¿Qué es ALKIMIA?</h3>
-                        <p className="secct3-subTitle">
-                            Ofrecemos las mejores experiencias de enoturismo en
-                            México para los amantes del vino.
-                        </p>
-                        <p className="secct3-subTitle">
-                            ALKMIA TRAVEL es la primera plataforma digital de
-                            enoturismo en México, que combina todos los
-                            elementos que hacen de una actividad en torno al
-                            vino, una experiencia mágica y memorable. A través
-                            de nuestra plataforma digital, podrás reservar tu
-                            hospedaje y recorridos a las mejores vinícolas del
-                            país, hoteles boutique, haciendas, museos,
-                            restaurantes y un sinfín de actividades más. Además,
-                            somos creadores de experiencias, tenemos tours
-                            privados y semiprivados que no encontrarás en ningún
-                            otro lugar.
-                        </p>
-                    </div>
-                </div>
-                <div className="secct4">
-                    <div className="secct-4-body">
-                        <p className="secct4-title">
-                            Visita los mejores viñedos mexicanos
-                        </p>
-                        <p className="secct-4-description">
-                            El mundo del vino mexicano es mucho más grande de lo
-                            que piensan. Nuevos viñedos abren sus puestas
-                            constantemente, ofreciendo nuevas y emocionantes
-                            experiencias por descubrir. Empieza a planear tu
-                            próxima visita a los viñedos mexicanos que tenemos
-                            en nuestra app.
-                        </p>
-                    </div>
-
-                    {/* Aqui es donde va el mapa */}
-                    <div className="secct4-map">
-                        <Map
-                            places={ubicationPlace}
-                            key={"patrol-map-wrap"}
-                            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMt7WCF_38RRjjj4cihiEO2kTf_eXGg9k&v=3.exp&libraries=geometry,drawing,places"
-                            loadingElement={
-                                <div
-                                    key={"table-patrols-load"}
-                                    style={{
-                                        height: `100%`,
-                                        background: "#000",
-                                    }}
-                                />
-                            }
-                            containerElement={
-                                <div
-                                    key={"table-patrols-cont"}
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        zIndex: "300",
-                                    }}
-                                />
-                            }
-                            mapElement={
-                                <div
-                                    key={"table-patrols-elme"}
-                                    style={{
-                                        height: `100%`,
-                                    }}
-                                />
-                            }
-                        />
-                    </div>
-                    {/* Aqui termina el mapa */}
-
-                    <div className="secct404"></div>
-                </div>
-                <div className="secct5">
-                    <p className="secct-5-title">
-                        Descubre todo tipo de anfitriones
-                    </p>
-                    <div className="secct-5-anfin">
-                        {anfintriones.map((item) => (
-                            <div className="secct5-descovery" key={item.title}>
-                                <div className="descovey-img">
-                                    <img
-                                        src={item.img}
-                                        alt="Descovery"
-                                        className="secct-5-icons"
-                                    />
-                                </div>
-                                <p className="secct5-descrip">{item.title}</p>
-                            </div>
-                        ))}
-                    </div>
                 </div>
                 <div className="secct6">
                     <div className="secct-6-A">
