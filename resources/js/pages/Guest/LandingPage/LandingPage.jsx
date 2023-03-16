@@ -63,6 +63,7 @@ import Map from "../../../components/molecules/Maps/Maps";
 import { useNavigate } from "react-router-dom";
 import Carrusel from "../../../components/organisms/Carrusel/Carrusel";
 import CarruselHome from "../../../components/atoms/CarruselHome/CarruselHome";
+import salude from "../../../assets/guest/salude.jpg";
 
 const LandingPage = () => {
     const [openPlace, setOpenPlace] = useState(false);
@@ -303,11 +304,9 @@ const LandingPage = () => {
     const vinedo = [
         {
             id: 1,
-            img: PaseoA,
-            price: "$500.00",
-            priceReal: "$700.00",
+            img: salude,
             title: "Paseo matutino",
-            number: "(1512)"
+            
         },
         {
             id: 2,
@@ -558,15 +557,16 @@ const LandingPage = () => {
                 <div className="secct6">
                     <div className="secct-6-A">
                         <p className="secct-6-A-title">
-                            Descubre experiencias mágicas
+                            ¿Por què es importante la salud mental?
                         </p>
-                        <span className="secct-6-A-des">
-                            Comienza a vivir el apasionante mundo del vino.
-                        </span>
+                        
                         <br />
                         <span className="secct-6-B-des">
-                            Visita los mejores destinos del enoturismo en
-                            México.
+                        La salud mental tiene un impacto directo en nuestra forma de pensar, de sentir y de actuar. Determina cómo respondemos ante el estrés, cómo nos relacionamos con otras personas y cómo tomamos decisiones. 
+                        <br></br>
+                        Es por esto tan importante cuidar de ella como cuidamos de nuestro cuerpo físico.
+                        <br></br>
+                        La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.
                         </span>
                     </div>
                     <div className="secct-6-B">
