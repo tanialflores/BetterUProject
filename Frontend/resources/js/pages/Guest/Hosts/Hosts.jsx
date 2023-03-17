@@ -52,27 +52,35 @@ const Hosts = () => {
     const position = [
         {
             id: 1,
-            pos: "-Vinícolas y viñedos",
+            pos: "Haga ejercicio con regularidad. Tan solo 30 minutos de caminatas diarias pueden ayudarle a mejorar su estado de ánimo y su salud. Si no puede hacer 30 minutos de una sola vez, ¡no se desanime! Haga pequeñas cantidades de ejercicio durante el día y estas se irán sumando.",
         },
         {
             id: 2,
-            pos: "-Restaurantes o experiencias gastronómicas",
+            pos: "Consuma alimentos saludables y comidas con regularidad, y manténgase hidratado. Una dieta balanceada y mucha agua pueden aumentar su nivel de energía y de atención a lo largo del día. Asimismo, limite el consumo de bebidas con cafeína, como refrescos gaseosos o café.",
         },
         {
             id: 3,
-            pos: "-Hoteles Boutique, haciendas y spa's",
+            pos: "Dele importancia al sueño. Establezca un horario y asegúrese de dormir suficiente tiempo. La luz azul que emiten diversos dispositivos y pantallas puede hacer que sea más difícil conciliar el sueño. Por eso, reduzca su grado de exposición a la luz azul de su teléfono o de su computadora antes de que llegue la hora de dormir.",
         },
         {
             id: 4,
-            pos: "-Tour operadoras o agencias de viajes",
+            pos: "Intente practicar una actividad relajante. Explore diversos programas o aplicaciones móviles de relajación o bienestar que podrían incorporar meditación, relajación muscular o ejercicios de respiración. Programe un horario regular para estas y otras actividades saludables que disfrute, como escribir en un diario.",
         },
         {
             id: 5,
-            pos: "-Guías turísticos y someliers",
+            pos: "Establezca metas y prioridades. Decida lo que debe hacerse en este momento y lo que puede esperar. Aprenda a decir “no” a nuevas tareas si empieza a sentir que está asumiendo demasiadas cosas. Intente tener presente lo que ha logrado al final del día, en lugar de lo que no ha podido hacer.",
         },
         {
             id: 6,
-            pos: "-Proveedores de actividades de turismo natural, aventura, etc.",
+            pos: "Practique la gratitud. Recuerde diariamente cosas por las que está agradecido. Sea específico. Escríbalas durante la noche o repítalas mentalmente.",
+        },
+        {
+            id: 7,
+            pos: "Centre su atención en las cosas positivas. Identifique y cuestione sus pensamientos negativos y poco útiles."
+        },
+        {
+            id: 8,
+            pos: "Manténgase en contacto. Comuníquese con sus amigos o familiares que puedan ofrecerle apoyo emocional y ayuda práctica."
         },
     ];
 
@@ -201,19 +209,22 @@ const Hosts = () => {
                         Consejos para el autocuidado
                     </p>
                     <p className="host-secct-B-body">
-                        Un anfitrión de ALKIMIA es un proveedor de servicios
-                        enoturísticos, ya sea desde una vinícola, hasta un
-                        proveedor de experiencias entorno al vino.
+                    La salud mental incluye el bienestar emocional, psicológico y social, y afecta la forma en que pensamos, sentimos, actuamos, tomamos decisiones y 
+                    nos relacionamos con las demás personas. La salud mental es más que la ausencia de una enfermedad mental y es esencial tanto para su salud en general 
+                    como para su calidad de vida. El autocuidado puede ser clave para mantener su salud mental y servir de apoyo para su tratamiento y recuperación, 
+                    en caso de que tenga alguna enfermedad mental.
                     </p>
                 </div>
                 <div className="host-secct-B-body host-secct-c">
                     <div className="host-secct-b-sub">
-                        <p>Nuestros anfitriones pueden ser:</p>
-                        {position.map((pos) => (
-                            <span key={pos.id}>
-                                {pos.pos} <br />
-                            </span>
-                        ))}
+                        <p>Los siguientes son algunos consejos para ayudarle a comenzar a cuidarse a sí mismo:</p>
+                        <div className="Tips">
+                            {position.map((pos) => (
+                                <span key={pos.id}>
+                                    {pos.pos} <br />
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -221,18 +232,16 @@ const Hosts = () => {
             <div className="host-secct2">
                 <div>
                     <h4 className="host-secct-2-title">
-                        ¿Quiéres realizar el test?
+                        ¿Quieres realizar el test?
                     </h4>
                     <p className="host-secct-2-body">
-                        Conviértete en anfitrión y deja que miles de alkimistas
-                        visiten tu vinícola, hotel, restaurante, o cualquier
-                        negocio que ofrezca experiencias y servicios
-                        enoturísticos.
+                        Realiza el test para saber tu posible diagnóstico, si tienes algún problema que afecte
+                        tu salud mental.
                     </p>
                     <div className="host-secct-2-btn">
                         <Button
                             className={"border"}
-                            btnTitle={"Unirme"}
+                            btnTitle={"Iniciar sesión"}
                             onClick={() => navigate("register")}
                         />
                     </div>
