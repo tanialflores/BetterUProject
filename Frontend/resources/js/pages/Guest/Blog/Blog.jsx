@@ -132,7 +132,7 @@ const Blog = () => {
     return (
         <div className="Blog">
             <div className="secct1">
-                <h1 className="secct-1-title">La guía del alkimista</h1>
+                <h1 className="secct-1-title">Directorio de especialistas</h1>
             </div>
             <div className="first-cards">
                 <CardViews elements={cards} setElements={setCards} />
