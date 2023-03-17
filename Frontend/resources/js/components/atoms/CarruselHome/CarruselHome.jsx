@@ -13,6 +13,7 @@ import "swiper/css/scrollbar";
 import "./CarruselHome.scss";
 import ReactStars from "../ReactStars/ReactStars";
 
+
 const CarruselHome = ({ object }) => {
     return (
         <Swiper
