@@ -63,7 +63,12 @@ import Map from "../../../components/molecules/Maps/Maps";
 import { useNavigate } from "react-router-dom";
 import Carrusel from "../../../components/organisms/Carrusel/Carrusel";
 import CarruselHome from "../../../components/atoms/CarruselHome/CarruselHome";
-import salude from "../../../assets/guest/salude.jpg";
+import c8 from "../../../assets/guest/c8.png";
+import c3 from "../../../assets/guest/c3.png";
+import c4 from "../../../assets/guest/c4.png";
+import c5 from "../../../assets/guest/c5.png";
+import c6 from "../../../assets/guest/c6.png";
+import c7 from "../../../assets/guest/c7.png";
 
 const LandingPage = () => {
     const [openPlace, setOpenPlace] = useState(false);
@@ -245,27 +250,22 @@ const LandingPage = () => {
         {
             id: 1,
             img: Cheese,
-            title: "Conoce México a través de sus Quesos",
-            descriptions: "México es un país lleno de sabores y hoy toca descubrirlo con un alimento que ha sido parte de nuestra cultura por cientos de años: Los...",
+            title: "Sintomas ansiedad",
+            descriptions: "Taquicardias, falta de aire, temblor, ganas de huir, dificultad para concentrarse,Irritabilidad, ensimismamiento, dificultades para iniciar o seguir una conversación, molestias digestivas, náuseas, vómitos, “nudo” en el estómago,temor a perder el control, recelos, sospechas, incertidumbre, dificultad para tomar decisiones.",
         },
         {
             id: 2,
             img: Campeche,
-            title: "Guía de viaje por Campeche",
-            descriptions: "Desde zonas arqueológicas milenarias, hasta zonas que denotan la modernidad y actualidad que se vive en este estado sureño. Hoy te...",
+            title: "Sintomas depresion",
+            descriptions: "Sentimientos persistentes de tristeza, ansiedad o “vacío”, desesperanza o pesimismo,irritabilidad, frustración o intranquilidad,dolores y molestias,pérdida de interés o placer en las actividades y los pasatiempo, dolor de cabeza, calambres o problemas digestivos sin una causa física aparente, o que no se alivian ni con tratamiento",
         },
         {
             id: 3,
             img: Breanch_grape,
-            title: "Las uvas y sus grandes aportaciones a la salud de tu piel",
-            descriptions: "Desde la antigüedad se conoce que las propiedades de las uvas aportan beneficios para la salud. Hipócrates, mejor conocido como el padre de la medicina recomendó el uso del vino...",
+            title: "Sintomas de transtornos alimentarios",
+            descriptions: "Comer descontroladamente, hacer dietas rigurosas, provocarse vómitos, abuso de laxantes y diuréticos, problemas con la dentadura, depresiones detectables, ir al baño después de comer, menstruaciones irregulares y preocupación exagerada por el peso.",
         },
-        {
-            id: 4,
-            img: Olive,
-            title: "El olivo en México",
-            descriptions: "Primero que nada, debemos tener claro que el aceite de oliva proviene del fruto del olivo, es decir, las aceitunas; y puesto que casi la...",
-        },
+        
     ];
 
     const products = [
@@ -304,49 +304,36 @@ const LandingPage = () => {
     const vinedo = [
         {
             id: 1,
-            img: salude,
-            title: "Paseo matutino",
+            img: c8,
+            
             
         },
         {
             id: 2,
-            img: PaseoB,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c3,
+            
+            
         },
         {
             id: 3,
-            img: PaseoC,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c4,
+            
+            
         },
         {
             id: 4,
-            img: PaseoD,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c5,
+            
         },
         {
             id: 5,
-            img: PaseoE,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c6,
+            
         },
         {
             id: 6,
-            img: PaseoF,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c7,
+            
         },
     ];
 
@@ -569,22 +556,33 @@ const LandingPage = () => {
                         La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.
                         </span>
                     </div>
+
+                    <div className="secct-6-A">
+                        <p className="secct-6-A-title">
+                            ¿Qué puede afectar mi salud mental?
+                        </p>
+                        
+                        <br />
+                        <span className="secct-6-B-des">
+                        Hay diferentes factores que pueden afectar su salud mental, incluyendo:
+                        <br></br>
+                        -Factores biológicos, como los genes o la química del cerebro
+                        <br></br>
+                        -La inseguridad
+                        <br></br>
+                        -El rapido cambio social
+                        <br></br>
+                        -El estilo de vida, como la dieta, actividad física y consumo de sustancias
+                        <br></br>
+                        También puede verse afectada por factores y experiencias personales, la interacción social, los valores culturales, experiencias familiares, escolares y laborales.
+                        </span>
+                    </div>
+                    
                     <div className="secct-6-B">
-                        <h1 className="secct-6-B-title">Explora por viñedo</h1>
+                        <h1 className="secct-6-B-title">¿Sabias que?</h1>
                         <Carousel object={vinedo}/>
                     </div>
-                    <div className="secct-6-B secB">
-                        <h1 className="secct-6-B-title">
-                            Explora por experiencia
-                        </h1>
-                        <Carousel object={exper}/>
-                    </div>
-                    <div className="secct-6-B secC">
-                        <h1 className="secct-6-B-title">
-                            Explora por gastronomia
-                        </h1>
-                        <Carousel object={gastro}/>
-                    </div>
+                    
                 </div>
                 <div className="secct7">
                     <h1 className="secct7-title">¿Quieres ser anfitrión?</h1>
