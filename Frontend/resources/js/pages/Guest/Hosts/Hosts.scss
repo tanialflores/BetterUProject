@@ -64,6 +64,8 @@
             text-decoration: none solid rgb(59, 59, 59);
             line-height: 37px;
             line-height: 20px;
+            display: flex;
+            text-align: justify;
         }
 
         .host-secct-c {
@@ -76,6 +78,15 @@
             flex-direction: column;
             gap: 21px;
             font-family: "Metropolis";
+            font-weight: 900;
+
+            .Tips{
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+                font-family: "Metropolis";
+                font-weight: 200;
+            }
         }
     }
 
@@ -247,7 +258,6 @@
             .host-secct-1-A {
                 font-size: 46px !important;
                 text-align: center;
-                margin-top: 116px !important;
             }
 
             .host-secct-1-B {
