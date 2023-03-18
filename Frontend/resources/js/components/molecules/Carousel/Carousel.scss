@@ -82,22 +82,6 @@
                 }
             }
     
-            .Slide-score {
-                margin-top: 4px;
-                width: 160px;
-    
-                .score-start {
-                    width: 20px;
-                    height: 20px;
-                }
-    
-                .cal-start {
-                    font-family: "Metropolis";
-                    font-size: 11.4px;
-                    color: #3b3b3b;
-                    text-decoration: none solid rgb(59, 59, 59);
-                }
-            }
     
             .swiper-button-prev:after,
             .swiper-rtl .swiper-button-next:after {
@@ -146,16 +130,6 @@
                     top: 26px !important;
                     left: 190px !important;
                     font-size: 13.8px !important;
-                }
-            }
-    
-            .Slide-score {
-                padding-left: 15px !important;
-                width: 200px !important;
-    
-                .score-start {
-                    width: 30px !important;
-                    height: 30px !important;
                 }
             }
         }
