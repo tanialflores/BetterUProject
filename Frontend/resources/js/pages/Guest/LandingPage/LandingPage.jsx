@@ -69,6 +69,9 @@ import c4 from "../../../assets/guest/c4.png";
 import c5 from "../../../assets/guest/c5.png";
 import c6 from "../../../assets/guest/c6.png";
 import c7 from "../../../assets/guest/c7.png";
+import SintomaA from "../../../assets/guest/SintomaA.jpg";
+import SintomaD from "../../../assets/guest/SintomaD.png";
+import alimentos from "../../../assets/guest/alimentos.png";
 
 const LandingPage = () => {
     const [openPlace, setOpenPlace] = useState(false);
@@ -249,19 +252,19 @@ const LandingPage = () => {
     const blog = [
         {
             id: 1,
-            img: Cheese,
+            img: SintomaA,
             title: "Sintomas ansiedad",
             descriptions: "Taquicardias, falta de aire, temblor, ganas de huir, dificultad para concentrarse,Irritabilidad, ensimismamiento, dificultades para iniciar o seguir una conversación, molestias digestivas, náuseas, vómitos, “nudo” en el estómago,temor a perder el control, recelos, sospechas, incertidumbre, dificultad para tomar decisiones.",
         },
         {
             id: 2,
-            img: Campeche,
+            img: SintomaD,
             title: "Sintomas depresion",
             descriptions: "Sentimientos persistentes de tristeza, ansiedad o “vacío”, desesperanza o pesimismo,irritabilidad, frustración o intranquilidad,dolores y molestias,pérdida de interés o placer en las actividades y los pasatiempo, dolor de cabeza, calambres o problemas digestivos sin una causa física aparente, o que no se alivian ni con tratamiento",
         },
         {
             id: 3,
-            img: Breanch_grape,
+            img: alimentos,
             title: "Sintomas de transtornos alimentarios",
             descriptions: "Comer descontroladamente, hacer dietas rigurosas, provocarse vómitos, abuso de laxantes y diuréticos, problemas con la dentadura, depresiones detectables, ir al baño después de comer, menstruaciones irregulares y preocupación exagerada por el peso.",
         },
@@ -585,23 +588,18 @@ const LandingPage = () => {
                     
                 </div>
                 <div className="secct7">
-                    <h1 className="secct7-title">¿Quieres ser anfitrión?</h1>
+                    <h1 className="secct7-title">¿Quieres realizar el test?</h1>
                     <div className="secct7-bodyA">
-                        Conviértete en anfitrión y deja que miles de alkimistas
-                        visiten tu vinícola, hotel, restaurante, o cualquier
-                        negocio que ofrezca experiencias y servicios
-                        enoturísticos. Si quieres saber más a cerca de volverte
-                        anfitrión, da click
+                    Realiza el test para saber tu posible diagnóstico, si tienes algún problema que afecte tu salud mental.
                     </div>
                     <p className="secct7-bodyA marg">
-                        Si quieres saber más a cerca de volverte anfitrión, da
-                        click
+                        Si quieres saber más, da click aqui
                     </p>
 
                     <div className="secct7-btn">
                         <div className="secct-7-btn">
                             <Button
-                                btnTitle={"Saber más"}
+                                btnTitle={"Iniciar sesion"}
                                 className={"border"}
                                 onClick={() => navigate("hosts")}
                             />
@@ -609,7 +607,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="secct8">
-                    <h1 className="secct8-title">Blog</h1>
+                    <h1 className="secct8-title">Para saber màs...</h1>
                     <div className="secct-8-body">
                         {blog.map((blog) => (
                             <div className="card-blog" key={blog.id}>
@@ -625,76 +623,13 @@ const LandingPage = () => {
                                     {blog.descriptions}
                                 </p>
 
-                                <div className="small-windows">
-                                    <img src={LogoColor} alt="Logo" className="smaall-icon"/>
-                                    <p className="akiloi">Alkimia</p>
-                                </div>
+                               
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="secct9">
-                    <div className="secct-9-texto">
-                        <div className="secct-9-container-logo">
-                            <img
-                                src={AlkimiaB}
-                                alt="Alkimia"
-                                className="secct-9-logo"
-                            />
-                        </div>
-                        <div className="secct-body">
-                            <h3 className="secct-body-title">
-                                Descarga la app
-                            </h3>
-                            <p className="secct-body-span">
-                                {" "}
-                                y comienza a catar México
-                            </p>
-                            <p className="secct-body-descr">
-                                Alkimia es la primer app de enoturismo en
-                                México. Descarga la app y reserva tus visitas a
-                                vinícolas, descubre viñedos, gastronomía de
-                                autor, hoteles únicos, experiencias y mucho más.
-                            </p>
-                            <div className="secct-9-btn">
-                                <div className="secct-9-cont">
-                                    <Button
-                                        btnTitle={"Saber más"}
-                                        className={"border"}
-                                        onClick={() => navigate("downloadApp")}
-                                    />
-                                </div>
-                            </div>
-                            <div className="secct-9-Store">
-                                <div className="containStore">
-                                    <img
-                                        src={GoogleStore}
-                                        alt="GoogleStore"
-                                        className="appStore"
-                                    />
-                                </div>
-                                <div className="containStore">
-                                    <img
-                                        src={AppleStore}
-                                        alt="AppleStore"
-                                        className="appStore"
-                                    />
-                                </div>
-                            </div>
-                            <div className="div-hiiden"></div>
-                        </div>
-                    </div>
-
-                    <div className="secct-phone-container">
-                        <div className="secct-9-sub">
-                            <img
-                                src={PhoneB}
-                                alt="phone"
-                                className="phone-secc"
-                            />
-                        </div>
-                    </div>
-                </div>
+                
+                
                 <div className="secct404 fina">
 
                 </div>

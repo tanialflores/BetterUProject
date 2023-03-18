@@ -72,7 +72,7 @@ const Footer = () => {
 
                 <div className="footer-secct2">
                     <h3 className="footer-comunity">
-                        Únete a la comunidad alkimista
+                        Únete a BetterU
                     </h3>
 
                     <div className="input-btn">
@@ -97,7 +97,7 @@ const Footer = () => {
                     <NavLink to="/preguntas" className="con-a">Preguntas frecuentes</NavLink>
                 </div>
                 <div className="footer-derechos-reservdos">
-                    © {currentYear} Alkimia Experiencias Mágicas S.A. de C.V. Todos los
+                    © {currentYear} BetterU. Todos los
                     derechos reservados.
                 </div>
             </div>

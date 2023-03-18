@@ -199,6 +199,8 @@ const Hosts = () => {
         },
     ];
 
+ 
+
     return (
         <div className="hosts">
             <img src={autocuidado} alt="fondoA" className="hosts-fir" />
@@ -266,7 +268,8 @@ const Hosts = () => {
             <div className="host-secct4">
                 <form action="" className="host-secct-4-form">
                     <div>
-                        <h1 className="host-secct-4-title">Soporte</h1>
+                        <h1 className="host-secct-4-title">Poner CARRUSEL</h1>
+                        
                         <div className="host-secct-4-descrip">
                             ¿Necesitas ayuda o tienes alguna duda? Déjanos tus
                             datos y haznos la pregunta, en breve nos
@@ -319,6 +322,7 @@ const Hosts = () => {
                     </div>
                 </form>
             </div>
+            
         </div>
     );
 };
