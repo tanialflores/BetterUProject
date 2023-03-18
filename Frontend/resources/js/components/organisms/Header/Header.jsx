@@ -112,22 +112,13 @@ const Header = ({ className }) => {
                             </div>
                             <div className="side-btns">
                                 <Button
-                                    btnTitle={"¡Comenzar ahora!"}
+                                    btnTitle={"Iniciar sesión"}
                                     className={
                                         url.pathname === "/"
                                             ? "border"
                                             : "border-color"
                                     }
                                     onClick={() => navigate("/start")}
-                                />
-                                <Button
-                                    btnTitle={"Descargar la app"}
-                                    className={
-                                        url.pathname === "/"
-                                            ? "border"
-                                            : "border-color"
-                                    }
-                                    onClick={() => navigate("downloadApp")}
                                 />
                             </div>
                         </div>
@@ -154,7 +145,7 @@ const Header = ({ className }) => {
                     </div>
                     <div className="h-return">
                         <Button
-                            btnTitle={"¡Comenzar ahora!"}
+                            btnTitle={"Iniciar sesión"}
                             height={"40px"}
                             className={
                                 url.pathname === "/" ? "border" : "border-color"
@@ -162,16 +153,7 @@ const Header = ({ className }) => {
                             onClick={() => navigate("/start")}
                         />
                     </div>
-                    <div className="h-return">
-                        <Button
-                            btnTitle={"Descargar la app"}
-                            height={"40px"}
-                            className={
-                                url.pathname === "/" ? "border" : "border-color"
-                            }
-                            onClick={() => navigate("downloadApp")}
-                        />
-                    </div>
+                    
                 </div>
             </nav>
         </>

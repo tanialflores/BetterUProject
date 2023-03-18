@@ -514,7 +514,7 @@ const LandingPage = () => {
                         <h3 className="secct3-title">Bienvenido a Better U</h3>
                         <p className="secct3-subTitle">
                         El test de Better U te ayudará a arrojar luces sobre la 
-                        existencia de un eventual problema psicológico para poder a orientarte a buscar 
+                        existencia de un eventual problema psicológico para poder orientarte a buscar 
                         ayuda cuando sea necesario.
                         </p>
                         <p className="secct3-subTitle">
@@ -547,7 +547,7 @@ const LandingPage = () => {
                 <div className="secct6">
                     <div className="secct-6-A">
                         <p className="secct-6-A-title">
-                            ¿Por què es importante la salud mental?
+                            ¿Por qué es importante la salud mental?
                         </p>
                         
                         <br />
@@ -582,7 +582,7 @@ const LandingPage = () => {
                     </div>
                     
                     <div className="secct-6-B">
-                        <h1 className="secct-6-B-title">¿Sabias que?</h1>
+                        <h1 className="secct-6-B-title">¿Sabías qué?</h1>
                         <Carousel object={vinedo}/>
                     </div>
                     

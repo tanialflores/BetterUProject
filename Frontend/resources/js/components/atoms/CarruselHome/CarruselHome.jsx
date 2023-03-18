@@ -37,10 +37,6 @@ const CarruselHome = ({ object }) => {
                             <span className="Slide-descr">{e.title}</span>
                             <div className="numberlk">{e.number}</div>
                         </div>
-
-                        <div className="Slide-score">
-                           <ReactStars size={20} numberStar={5}/>
-                        </div>
                     </div>
                 </SwiperSlide>
             ))}
