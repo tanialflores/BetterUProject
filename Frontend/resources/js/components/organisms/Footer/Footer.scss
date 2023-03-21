@@ -3,6 +3,7 @@
     width: 100%;
     background: linear-gradient(120deg, #3a8dde 3%, #8331a7 47%, #df1683 100%);
     padding: 30px 20px;
+    height: 128px;
 
     .footer-network {
         display: flex;
@@ -248,7 +249,6 @@
     }
 
     .footer-line {
-        top: 214px !important;
         width: 80% !important;
         left: 157px !important;
     }
@@ -256,7 +256,6 @@
     .footer-finish {
         display: flex !important;
         flex-direction: row-reverse;
-        margin-top: 159px !important;
 
         justify-content: space-around;
         align-items: center;

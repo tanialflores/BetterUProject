@@ -46,7 +46,6 @@ const Register = () => {
             <div className="registroBody">
                 <div className="xsecct1">
                     <p className="xsecct-1-title"><b>Registro</b></p>
-                    <p className="xsecct-1-sub">¡Convierteté en alkimista!</p>
                 </div>
                 <div className="xsecct2">
                     <Input
@@ -96,9 +95,6 @@ const Register = () => {
                         className={"degradado"}
                         onClick={() => handleSubmit()}
                     />
-                </div>
-                <div className="xsecct5">
-                    <NavLink className="xsecct-link">Omitir registro</NavLink>
                 </div>
             </div>
         </div>

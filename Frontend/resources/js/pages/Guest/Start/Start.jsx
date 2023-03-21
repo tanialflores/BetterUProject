@@ -18,7 +18,7 @@ const Start = () => {
     return (
         <div className="Start">
             <div className="sform1">
-                <p className="s-title">¡Bienvenido alkimista!</p>
+                <p className="s-title">¡Bienvenido!</p>
                 <p className="s-text">Ingresa ahora</p>
                 <div className="sform-1-container">
                     <Button
