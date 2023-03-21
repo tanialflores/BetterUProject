@@ -5,14 +5,27 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import autocuidado from "../../../assets/guest/autocuidado.jpg";
 import Plus from "../../../assets/icons/plus.svg";
 import dudas from "../../../assets/guest/dudas.jpg";
+import tip1 from "../../../assets/guest/tip1.png";
+import tip2 from "../../../assets/guest/tip2.png";
+import tip3 from "../../../assets/guest/tip3.png";
+import tip4 from "../../../assets/guest/tip4.png";
+import tip5 from "../../../assets/guest/tip5.png";
+import tip6 from "../../../assets/guest/tip6.png";
+import tip7 from "../../../assets/guest/tip7.png";
+import tip8 from "../../../assets/guest/tip8.png";
+import tip9 from "../../../assets/guest/tip9.png";
+import tip10 from "../../../assets/guest/tip10.png";
+import tip11 from "../../../assets/guest/tip11.png";
+import tip12 from "../../../assets/guest/tip12.png";
+import tip13 from "../../../assets/guest/tip13.png";
+import tip14 from "../../../assets/guest/tip14.png";
+import tip15 from "../../../assets/guest/tip15.png";
 
 //Styles 😊
 import "./Hosts.scss";
 
 //Components 👌
 import Button from "../../../components/atoms/Button/Button";
-import Input from "../../../components/atoms/Input/Input";
-import TextArea from "../../../components/atoms/TeaxtArea/TextArea";
 import Slide from "../../../components/atoms/Slide/Slide";
 import {
     ColorValidation,
@@ -268,57 +281,28 @@ const Hosts = () => {
             <div className="host-secct4">
                 <form action="" className="host-secct-4-form">
                     <div>
-                        <h1 className="host-secct-4-title">Poner CARRUSEL</h1>
+                        <h1 className="host-secct-4-title">Tips</h1>
                         
                         <div className="host-secct-4-descrip">
-                            ¿Necesitas ayuda o tienes alguna duda? Déjanos tus
-                            datos y haznos la pregunta, en breve nos
-                            comunicaremos contigo para darte una solución
+                           Nuestra salud mental puede mejorar considerablemente cuando nos atendemos, cuando nos valoramos, cuando nos priorizamos... y todo ello y más, está resumido en: cuando nos amamos.
                         </div>
                     </div>
-                    <Input
-                        title={"Email"}
-                        placeholder={"Email"}
-                        type={"email"}
-                        id={"email"}
-                        onChange={(e) =>
-                            UpdateValue(e, "email", inputList, setInputList)
-                        }
-                    />
-                    <Input
-                        title={"Nombre"}
-                        placeholder={"Nombre"}
-                        type={"text"}
-                        id={"name"}
-                        onChange={(e) =>
-                            UpdateValue(e, "name", inputList, setInputList)
-                        }
-                    />
-                    <Input
-                        title={"Apellido"}
-                        placeholder={"Apellido"}
-                        type={"text"}
-                        id={"lastName"}
-                        onChange={(e) =>
-                            UpdateValue(e, "lastName", inputList, setInputList)
-                        }
-                    />
-                    <TextArea
-                        title={"Mensaje"}
-                        placeholder={"Escribe aquí..."}
-                        id={"message"}
-                        onChange={(e) =>
-                            UpdateValue(e, "message", inputList, setInputList)
-                        }
-                        viewTitle
-                    />
-
-                    <div className="host-secct-4-btn">
-                        <Button
-                            btnTitle={"Enviar"}
-                            className={"solid"}
-                            onClick={handleSubmit}
-                        />
+                    <div className="ImgTips">
+                        <img src={tip1} className="tip1"></img>
+                        <img src={tip2} className="tip2"></img>
+                        <img src={tip3} className="tip3"></img>
+                        <img src={tip4} className="tip4"></img>
+                        <img src={tip5} className="tip5"></img>
+                        <img src={tip6} className="tip6"></img>
+                        <img src={tip7} className="tip7"></img>
+                        <img src={tip8} className="tip8"></img>
+                        <img src={tip9} className="tip9"></img>
+                        <img src={tip10} className="tip10"></img>
+                        <img src={tip11} className="tip11"></img>
+                        <img src={tip12} className="tip12"></img>
+                        <img src={tip13} className="tip13"></img>
+                        <img src={tip14} className="tip14"></img>
+                        <img src={tip15} className="tip15"></img>
                     </div>
                 </form>
             </div>

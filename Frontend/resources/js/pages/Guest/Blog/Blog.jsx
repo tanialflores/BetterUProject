@@ -3,20 +3,14 @@ import React, { useState } from "react";
 //Assets
 import Puntos from "../../../assets/icons/puntos.png";
 import Heart from "../../../assets/icons/heart.svg";
-import Allmexicancheese from "../../../assets/icons/allmexicancheese.jpeg";
+import directorio from "../../../assets/guest/directorio.png";
+import directorio2 from "../../../assets/guest/directorio2.jpg";
+import directorio3 from "../../../assets/guest/directorio3.jpg";
 import BgCampeche from "../../../assets/icons/bgCampeche.jpg";
 import Maridar from "../../../assets/icons/maridar.png";
 
-import As from '../../../assets/icons/a.png'
-import Bs from '../../../assets/icons/b.png'
-import Cs from '../../../assets/icons/c.png'
-import Ds from '../../../assets/icons/d.png'
-import Es from '../../../assets/icons/e.png'
-import Fs from '../../../assets/icons/f.png'
-
 //Styles 😂
 import "./Blog.scss";
-import CardViews from "../../../components/organisms/CardViews/CardViews";
 import CardViewShort from "../../../components/organisms/CardViewShort/CardViewShort";
 
 const Blog = () => {
@@ -26,11 +20,10 @@ const Blog = () => {
             id: 1,
             name: "Alkimia",
             date: "25 mar • 25 mar",
-            // emogi: `✒`,
             icon: Puntos,
             title: "Conoce México a través de sus Quesos",
             icon2: Heart,
-            bg: Allmexicancheese,
+            bg: "",
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -68,7 +61,7 @@ const Blog = () => {
             icon: Puntos,
             title: "Conoce México a través de sus Quesos",
             icon2: Heart,
-            bg: As,
+            bg: directorio,
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -79,7 +72,7 @@ const Blog = () => {
             icon: Puntos,
             title: "Guía de viaje por Campeche",
             icon2: Heart,
-            bg: Bs,
+            bg: directorio2,
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -90,7 +83,7 @@ const Blog = () => {
             icon: Puntos,
             title: "5 vinos para maridar con mariscos",
             icon2: Heart,
-            bg: Cs,
+            bg: directorio3,
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -101,7 +94,7 @@ const Blog = () => {
             icon: Puntos,
             title: "5 vinos para maridar con mariscos",
             icon2: Heart,
-            bg: Ds,
+            bg: directorio2,
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -112,7 +105,7 @@ const Blog = () => {
             icon: Puntos,
             title: "5 vinos para maridar con mariscos",
             icon2: Heart,
-            bg: Es,
+            bg: directorio3,
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -123,7 +116,7 @@ const Blog = () => {
             icon: Puntos,
             title: "5 vinos para maridar con mariscos",
             icon2: Heart,
-            bg: Fs,
+            bg: directorio,
             bgTrap: "rgba(0, 0, 0, 0.4)",
             liked: false,
         },
@@ -133,9 +126,6 @@ const Blog = () => {
         <div className="Blog">
             <div className="secct1">
                 <h1 className="secct-1-title">Directorio de especialistas</h1>
-            </div>
-            <div className="first-cards">
-                <CardViews elements={cards} setElements={setCards} />
             </div>
             <div className="seconds-cards">
                 <CardViewShort elements={cardsShort} setElements={setCardsShort} />
