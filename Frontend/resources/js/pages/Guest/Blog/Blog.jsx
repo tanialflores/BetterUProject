@@ -18,7 +18,7 @@ const Blog = () => {
     const [cards, setCards] = useState([
         {
             id: 1,
-            name: "Alkimia",
+            name: "Alkuimia",
             date: "25 mar • 25 mar",
             icon: Puntos,
             title: "Conoce México a través de sus Quesos",
