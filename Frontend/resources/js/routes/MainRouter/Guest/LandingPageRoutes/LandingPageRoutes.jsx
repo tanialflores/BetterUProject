@@ -26,6 +26,7 @@ import TmsCdsSkeletons from "../../../../pages/Guest/Terminos/TmsCdsSkeletons";
 import PrivacySkeletons from "../../../../pages/Guest/Privacy/PrivacySkeletons";
 
 const LandingPageRoutes = () => {
+
     return (
         // <GuestLayout>
         <Routes>

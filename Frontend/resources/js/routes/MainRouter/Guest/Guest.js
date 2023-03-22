@@ -5,12 +5,12 @@ import ExperiencesRoute from "../Auth/ExperiencesRoute/ExperiencesRoute";
 import LandingPageRoutes from "./LandingPageRoutes/LandingPageRoutes";
 import UsersRoutes from "./Users/UsersRoutes";
 
-const  Guest = ({AuthFunctions}) => {
+const  Guest = ({}) => {
     return (
         <>
             <GuestLayout>
                 <LandingPageRoutes />
-                <UsersRoutes AuthFunctions={AuthFunctions}/>
+                <UsersRoutes />
                 <ExperiencesRoute></ExperiencesRoute>
             </GuestLayout>
         </>

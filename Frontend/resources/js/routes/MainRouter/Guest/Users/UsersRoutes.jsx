@@ -45,14 +45,14 @@ import TemnsAndCodsSkeleton from "../../../../pages/Guest/SessionLogin/TemnsAndC
 import UpdateAccessesSkeleton from "../../../../pages/Guest/SessionLogin/UpdateAccesses/UpdateAccessesSkeleton";
 import WelcomeRegistrationSkeleton from "../../../../pages/Guest/SessionLogin/WelcomeRegistration/WelcomeRegistrationSkeleton";
 
-const UsersRoutes = ({ AuthFunctions }) => {
+const UsersRoutes = ({ }) => {
     return (
         <Routes>
             <Route
                 path="/login"
                 element={
                     <Suspense fallback={<LoginSkelton />}>
-                        <Login AuthFunctions={AuthFunctions} />
+                        <Login />
                     </Suspense>
                 }
             />
