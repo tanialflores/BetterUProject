@@ -25,7 +25,7 @@ const BlogSkeleton = () => {
     const [cards, setCards] = useState([
         {
             id: 1,
-            name: "Alkooiimia",
+            name: "Alkimia",
             date: "25 mar • 25 mar",
             // emogi: `✒`,
             icon: Puntos,

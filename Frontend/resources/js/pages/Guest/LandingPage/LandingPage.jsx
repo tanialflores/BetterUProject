@@ -576,7 +576,7 @@ const LandingPage = () => {
                             <Button
                                 btnTitle={"Iniciar sesion"}
                                 className={"border"}
-                                onClick={() => navigate("hosts")}
+                                onClick={() => navigate("start")}
                             />
                         </div>
                     </div>
