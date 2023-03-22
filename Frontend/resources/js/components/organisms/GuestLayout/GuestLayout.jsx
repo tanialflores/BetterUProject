@@ -4,7 +4,6 @@ import Header from "../Header/Header";
 
 export default function ({ children }) {
    
-    
     return (
         <div className="Guest">
             <Header />

@@ -14,7 +14,7 @@ import {
 //Styles
 import "./Login.scss";
 
-const Login = ({ AuthFunctions }) => {
+const Login = ({  }) => {
     const navigate = useNavigate();
     const [inputList, setInputList] = useState({
         email: { value: null, validationType: "empty" },
@@ -33,21 +33,23 @@ const Login = ({ AuthFunctions }) => {
     }, [inputList]);
 
     const handleSubmit = () => {
-        if (SubmitValidation(inputList, setInputList)) {
-            const formData = new FormData()
+        const validate = SubmitValidation(inputList, setInputList)
+        if (validate) {
+            localStorage.setItem('auth', true)
+            navigate('/')
+            // const formData = new FormData()
             
-            formData.append('email', inputList.email.value)
-            formData.append('password', inputList.password.value)
-            const resThen = (res) => {
-                localStorage.setItem('authToken', res.data.data.token)
-                // setAuth(true)
-                AuthFunctions(true);
-                navigate("/home");
-                // console.log('entro')
-                // navigate("/dashboard")
-            }
+            // formData.append('email', inputList.email.value)
+            // formData.append('password', inputList.password.value)
+            // const resThen = (res) => {
+            //     localStorage.setItem('authToken', res.data.data.token)
+            //     // setAuth(true)
+            //     navigate("/home");
+            //     // console.log('entro')
+            //     // navigate("/dashboard")
+            // }
 
-            postAxiosGuest('api/auth/mobile/login', resThen, errorResponse, formData)
+            // postAxiosGuest('api/auth/mobile/login', resThen, errorResponse, formData)
         }
     };
 
