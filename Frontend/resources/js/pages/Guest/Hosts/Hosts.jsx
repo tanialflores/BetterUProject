@@ -20,6 +20,7 @@ import tip12 from "../../../assets/guest/tip12.png";
 import tip13 from "../../../assets/guest/tip13.png";
 import tip14 from "../../../assets/guest/tip14.png";
 import tip15 from "../../../assets/guest/tip15.png";
+import tip16 from "../../../assets/guest/tip16.png";
 
 //Styles 😊
 import "./Hosts.scss";
@@ -303,6 +304,7 @@ const Hosts = () => {
                         <img src={tip13} className="tip13"></img>
                         <img src={tip14} className="tip14"></img>
                         <img src={tip15} className="tip15"></img>
+                        <img src={tip16} className="tip16"></img>
                     </div>
                 </form>
             </div>
