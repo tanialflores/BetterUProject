@@ -1,0 +1,269 @@
+.CardViewShort {
+    padding: 33px 20px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+
+    .secct-2-cards {
+        position: relative;
+        width: 100%;
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover {
+            background-color: rgba(223, 22, 131, 0.5) !important;
+            cursor: pointer;
+
+            .secct-2-btn-cont {
+                display: flex;
+            }
+        }
+
+        .secct-2-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .secct-2-cards-a {
+            height: 59px;
+            position: relative;
+
+            .secct-2-div-a {
+                padding: 10px 0px 10px 7px;
+                display: flex;
+                justify-content: space-between;
+
+                .secct-2-name {
+                    font-family: "Metropolis";
+                    font-size: 12.88px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    text-decoration: none solid rgb(255, 255, 255);
+                }
+                .secct-2-date {
+                    font-family: "Metropolis";
+                    font-size: 12.88px;
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+
+                .card-a-puntos {
+                    height: 27px;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            .secct-2-share {
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                top: 6px;
+                right: -135px;
+                width: 135px;
+                height: 33px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                background-color: #3b3b3b;
+                align-items: center;
+                transition: all 0.2s;
+
+                &.openModal {
+                    right: 0;
+                }
+
+                .secct-2-text {
+                    font-family: "Metropolis";
+                    font-size: 13.8px;
+                    color: #ffffff;
+                    text-decoration: none solid rgb(255, 255, 255);
+                    line-height: 37px;
+                }
+
+                .share {
+                    widows: 15px;
+                    height: 15px;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .footer-secct2 {
+            .secct-2-container-title {
+                width: 100%;
+                padding: 10px 10px;
+
+                .secct-2-c-title {
+                    font-family: "Metropolis";
+                    font-size: 18.4px;
+                    font-weight: bold;
+                    color: #fff;
+                    // margin-top: calc(61px - 31px);
+                }
+            }
+
+            .contaner-line {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .secct-line-div {
+                    border: 1px solid #fff;
+                    width: 100%;
+                }
+            }
+
+            .secct-2-c {
+                height: 59px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 7px;
+                gap: 4px;
+
+                .secct-2-heart {
+                    width: 30px;
+                    height: 30px;
+
+                    &.likedFilter {
+                        filter: invert(28%) sepia(90%) saturate(6529%) hue-rotate(316deg) brightness(90%) contrast(94%);
+                    }
+                }
+
+                .secct-2-viewss {
+                    display: flex;
+                    gap: 26px;
+
+                    .viewsNumber {
+                        font-family: "Metropolis";
+                        font-size: 16.56px;
+                        color: #ffffff;
+                    }
+
+                    .Eye-container {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .Message-container {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .secct-2-btn-cont {
+            position: absolute;
+            top: calc(50% - 17px);
+            left: calc(50% - 51px);
+            width: 100px;
+            height: 31px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 30px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .CardViewShort {
+        .secct-2-cards {
+            width: 27% !important;
+            height: 499px !important;
+
+            .secct-2-div-a{
+
+                padding: 20px 20px 10px 13px !important;
+
+                .secct-2-name{
+                    font-size: 15.64px !important;
+                }
+
+                .secct-2-date{
+                    font-size: 15.64px !important;
+                }
+
+                .card-a-puntos{
+                    height: 40px !important;
+                }
+
+               
+            }
+            .secct-2-share{
+                width: 212px !important;
+                height: 52px !important;
+                top: 14px !important;
+
+                &.openModal{
+                    right: 31px !important;
+                }
+
+                .secct-2-text{
+                    font-size: 16.56px !important;
+                }
+
+                .share{
+                    width: 24px !important;
+                    height: 24px !important;
+                    padding-right: 0 !important;
+                }
+            }
+
+            .footer-secct2{
+                padding: 0 25px 4px 25px !important;
+            }
+
+
+            .secct-2-c-title{
+                font-size: 27.6px !important;
+            }
+
+            .secct-2-c{
+
+
+                .secct-2-heart{
+                    width: 30px !important;
+                    height: 30px !important;
+                }
+
+                .secct-2-viewss{
+
+                    .ViewEye{
+                        width: 30px !important;
+                        height: 30px !important;
+                    }
+
+                    .viewsNumber{
+                        font-size: 16.56px !important;
+                    }
+                }
+            }
+
+            .secct-2-btn-cont {
+                top: calc(50% - 33px) !important;
+                left: calc(50% - 82px) !important;
+                width: 183px !important;
+                height: 51px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.MainMarker {
+    display: grid;
+    place-items: center;
+    width: 244px;
+    height: 244px;
+    border-radius: 50%;
+    background-color: rgba(223, 22, 131, 0.15);
+
+    .circleMedium {
+        display: grid;
+        place-items: center;
+        width: 162px;
+        height: 162px;
+        border-radius: 50%;
+        background-color: rgba(223, 22, 131, 0.25);
+
+        .circleLittle {
+            display: grid;
+            place-items: center;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: rgba(223, 22, 131, 0.4);
+
+            .centerMarker {
+                display: grid;
+                place-items: center;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #8331a7;
+            }
+        }
+    }
+}

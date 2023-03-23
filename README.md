@@ -1,2 +1,0 @@
-# BetterUProject
-Proyecto Modular

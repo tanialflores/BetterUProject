@@ -1,0 +1,118 @@
+.post_view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    width: 420px;
+    margin: 0 auto;
+    padding: 0 22px;
+
+    .user_row {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        padding-left: 21px;
+
+        &.colab .user_bo {
+            display: flex !important;
+        }
+
+        .user_pro {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .user_ti {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 11px;
+            color: #000000;
+            text-decoration: none solid rgb(0, 0, 0);
+        }
+
+        .user_bo {
+            display: none;
+            place-items: center;
+            
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-image: linear-gradient(0deg, #fbb030 0%, #ffe730 100% );
+        }
+    }
+
+    .post_pic {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 376px;
+        height: 262.2px;
+        $note-height: 36.8px;
+        
+        &.note {
+            > img {
+                height: calc(100% - $note-height) !important;  
+            }
+
+            .post_not {
+                display: flex !important;
+            }
+        }
+
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        .post_not {
+            display: none;
+            align-items: center;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            
+            width: 100%;
+            height: $note-height;
+            padding-left: 52px;
+
+            background-image: linear-gradient(90deg, #fbb030 0%, #ffe730 100% );
+            background-position: center center;
+            background-size: cover;
+
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none solid rgb(255, 255, 255);
+        }
+    }
+
+    .post_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        
+        width: 335px;
+        margin: 0 auto;
+
+        .p_it {
+            font-weight: 400;
+            font-family: Roboto;
+            font-size: 11px;
+            color: #918f8a;
+            text-decoration: none solid rgb(145, 143, 138);
+        }
+
+        .p_dec {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 11px;
+            color: #000000;
+            text-decoration: none solid rgb(0, 0, 0);
+        }
+    }
+}

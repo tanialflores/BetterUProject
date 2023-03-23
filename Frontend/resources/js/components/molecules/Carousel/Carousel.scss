@@ -1,0 +1,139 @@
+.container-carrousel-team {
+    width: 100%;
+    display: flex;
+
+    .parentCarr{
+        @media (min-width: 1000px) and (max-width: 1400px) {
+            // width: 320px !important;
+            margin-right: 9px !important;   
+        }
+        @media (min-width: 1401px) {
+            margin-right: 18px !important;
+        }
+
+        .laSLide {
+            .Slide-container {
+                width: 160px;
+                height: 110px;
+    
+                @media (min-width: 1000px) and (max-width: 1400px) {
+                    width: 300px;
+                    height: 342px;
+                }
+                @media (min-width: 1401px) {
+                    width: 430px;
+                    height: 456px;
+                }
+    
+                .Slide-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+            }
+    
+            .Slide-prices-container {
+                width: 100%;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                margin-top: 9px;
+    
+                .Slide-price {
+                    font-family: "Metropolis";
+                    font-size: 16.56px;
+                    color: #df1683;
+                    text-decoration: none solid rgb(223, 22, 131);
+                    margin-right: 15px;
+                }
+    
+                .Slide-priceReal {
+                    font-family: "Metropolis";
+                    font-size: 11.96px;
+                    color: #8a8a8a;
+                    text-decoration: line-through;
+                }
+            }
+    
+            .Slide-descr-container {
+                position: relative;
+                width: 160px;
+                margin-top: 5px;
+
+                .Slide-descr {
+                    font-weight: bold;
+                    font-family: "Metropolis";
+                    font-size: 16.56px;
+                    color: #3b3b3b;
+                    text-decoration: none solid rgb(59, 59, 59);
+                }
+    
+                .numberlk {
+                    position: absolute;
+                    top: 27px;
+                    right: 162px;
+                    width: 50px;
+                    height: 15px;
+                    font-family: "Metropolis";
+                    font-size: 11.4px;
+                    color: #3b3b3b;
+                }
+            }
+    
+    
+            .swiper-button-prev:after,
+            .swiper-rtl .swiper-button-next:after {
+                content: "prev";
+                color: #df1683;
+                font-weight: bold;
+            }
+    
+            .swiper-button-next:after,
+            .swiper-rtl .swiper-button-prev:after {
+                content: "next";
+                color: #df1683;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .parentCarr{
+        .laSLide {
+            // padding: 0 42px !important;
+    
+            .Slide-prices-container {
+                height: 60px !important;
+                padding-left: 15px !important;
+    
+                .Slide-price {
+                    font-size: 27.6px !important;
+                }
+    
+                .Slide-priceReal {
+                    font-size: 18.4px !important;
+                }
+            }
+    
+            .Slide-descr-container {
+                padding-left: 15px !important;
+    
+                .Slide-descr {
+                    font-size: 18.4px !important;
+                }
+    
+                .numberlk {
+                    top: 26px !important;
+                    left: 190px !important;
+                    font-size: 13.8px !important;
+                }
+            }
+        }
+
+    }
+    
+}

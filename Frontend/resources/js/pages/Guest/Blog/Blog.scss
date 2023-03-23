@@ -1,0 +1,44 @@
+.Blog {
+    padding-top: 65px;
+
+    .secct1 {
+        background: linear-gradient(
+            120deg,
+            #3a8dde 3%,
+            #8331a7 47%,
+            #df1683 100%
+        );
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .secct-1-title {
+            font-family: "Metropolis";
+            font-size: 18.4px;
+            color: #ffffff;
+        }
+    }
+
+    .seconds-cards{
+        margin-top: 35px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .Blog{
+        padding-top: 90px;
+        .secct1{
+            height: 194px !important;
+
+            .secct-1-title{
+                font-size: 36.8px !important;
+            }
+        }
+
+        .first-cards{
+            margin-top: 120px !important;
+        }
+    }
+}
