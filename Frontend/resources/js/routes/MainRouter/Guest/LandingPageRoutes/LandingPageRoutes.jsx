@@ -24,6 +24,7 @@ import BlogSkeleton from "../../../../pages/Guest/Blog/BlogSkeleton";
 import ContactSkeleton from "../../../../pages/Guest/Contact/ContactSkeleton";
 import TmsCdsSkeletons from "../../../../pages/Guest/Terminos/TmsCdsSkeletons";
 import PrivacySkeletons from "../../../../pages/Guest/Privacy/PrivacySkeletons";
+import Test from "../../../../pages/Guest/Test/test";
 
 const LandingPageRoutes = () => {
 
@@ -107,6 +108,14 @@ const LandingPageRoutes = () => {
                 element={
                     <Suspense fallback={<StartSkeleton />}>
                         <Start />
+                    </Suspense>
+                }
+            />
+            <Route
+                path="/test"
+                element={
+                    <Suspense fallback={<div/>}>
+                        {<Test/>} 
                     </Suspense>
                 }
             />
