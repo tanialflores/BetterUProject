@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import "./Test.scss";
+
+import React, { useState } from "react";
 import ChatAlkimia from "../../../components/molecules/ChatAlkimia/ChatAlkimia";
 
 const Test = () => {
@@ -18,7 +19,7 @@ const Test = () => {
     ]);
     return (
         <div className="AuthView">
-            <div className="Contact-t">
+            <div className="Contact-Better">
                 <div className="bg-vg">
                     <div className="bg-white1"></div>
                 </div>
