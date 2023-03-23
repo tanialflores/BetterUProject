@@ -51,6 +51,7 @@ import alimentos from "../../../assets/guest/alimentos.png";
 const LandingPage = () => {
     const [openPlace, setOpenPlace] = useState(false);
     const [openCategory, setOpenCategory] = useState(false); //-250
+    const auth = localStorage.getItem('auth')
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -562,14 +563,12 @@ const LandingPage = () => {
                     </div>
                     
                 </div>
+                {!auth ?
                 <div className="secct7">
                     <h1 className="secct7-title">¿Quieres realizar el test?</h1>
                     <div className="secct7-bodyA">
                     Realiza el test para saber tu posible diagnóstico, si tienes algún problema que afecte tu salud mental.
                     </div>
-                    <p className="secct7-bodyA marg">
-                        Si quieres saber más, da click aqui
-                    </p>
 
                     <div className="secct7-btn">
                         <div className="secct-7-btn">
@@ -581,6 +580,17 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
+                :
+                <div className="secct7">
+                    <h1 className="secct7-title">Better U</h1>
+                    <div className="secct7-bodyA">
+                        Realizar el test te ayudará a saber tu posible diagnostico.
+                    </div>
+                    <p className="secct7-bodyA marg">
+                        Si quieres saber más, da click aqui
+                    </p>
+                </div>
+                }
                 <div className="secct8">
                     <h1 className="secct8-title">Para saber màs...</h1>
                     <div className="secct-8-body">
