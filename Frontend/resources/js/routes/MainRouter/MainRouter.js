@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-
-import Auth from "./Auth/Auth";
 import Guest from "./Guest/Guest";
 
 import "./MainRouter.scss";
