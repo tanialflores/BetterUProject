@@ -1,14 +1,11 @@
 const User = require("../models/userModel");
 const bcrypt = require('bcrypt');
+const { Jsonwt } = require("../helpers/jwt");
 
 const userStore = async(req, res) => {
     const { email, password } = req.body;
 
     try {
-        if(!email || !password){
-            return res.status(400).json({ msg: 'Faltan campos requerido' })
-        }
-
         const searchEmail = await User.findOne({ where: { email } })
         if(searchEmail){
             return res.status(409).json({ msg: 'El correo ingresado ya existe' })
@@ -20,8 +17,9 @@ const userStore = async(req, res) => {
         if(!user){
             return res.status(500).json({ msg: 'Hubo un problema, intente nuevamente' })
         }
+        const token = await Jsonwt(user.id)
 
-        return res.status(200).json({ msg: 'Se registro de manera éxitosa', token: '' })
+        return res.status(200).json({ msg: 'Se registro de manera éxitosa', token: token, status: 200 })
     } catch(err) {
         return res.status(500).json({ msg: 'Hubo un problema, intente mas tarde' })
     }
@@ -29,4 +27,33 @@ const userStore = async(req, res) => {
 
 };
 
-module.exports = { userStore }
+const userLogin = async(req, res) => {
+
+    const { email, password } = req.body
+    
+    try {
+        //Verificar si el email existe
+        const user = await User.findOne({ email })
+        console.log(user)
+        if(!user){
+            return res.status(400).json({ msg: "El correo o contraseña son incorrectos" })
+        }
+        if(user.email !== email){
+            return res.status(400).json({ msg: "El correo o contraseña son incorrectos" })
+        }
+        //Verificar la contraseña
+        const validatePassword = bcrypt.compareSync(password, user.password)
+        if(!validatePassword){
+            return res.status(400).json({ msg: "El correo o contraseña son incorrectos" })
+        }
+        //Generar el JWT
+        const token = await Jsonwt(user.id)
+        res.json({ token, status: 200 })
+    } catch(err){
+        return res.status(500).json({ msg: "Algo salio mal" })
+    }
+
+
+}
+
+module.exports = { userStore, userLogin }
