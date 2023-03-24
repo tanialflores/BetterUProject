@@ -92,14 +92,6 @@ const CardsHome = ({
                                     <label className="item-title">
                                         {item.name}
                                     </label>
-                                    <div className="container-star">
-                                        <div>
-                                            <ReactStars numberStar={item.ranking} size={size}/>
-                                        </div>
-                                        <label className="item-values">
-                                            {/* {item.value} */}
-                                        </label>
-                                    </div>
                                 </div>
                             </div>
                         ) : (

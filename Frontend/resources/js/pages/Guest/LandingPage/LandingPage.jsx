@@ -6,11 +6,7 @@ import Button from "../../../components/atoms/Button/Button";
 import trastornoAlimenticio from "../../../assets/guest/trastornoAlimenticio.png";
 import depresion from "../../../assets/guest/depresion.png";
 import ansiedad from "../../../assets/guest/ansiedad.png";
-import Shape from "../../../assets/icons/Shape.svg";
-import Pago from "../../../assets/icons/pago.svg";
-import Phone from "../../../assets/icons/phoneA.png";
-import back from "../../../assets/guest/back.png";
-import LogoColor from '../../../assets/icons/logob.png';
+import mentalhealth from "../../../assets/guest/mentalhealth.png"
 import logoSinFondo from "../../../assets/guest/logoSinFondo.png"
 
 import Bed from "../../../assets//icons/test/034-bed.svg";
@@ -23,24 +19,12 @@ import Autencilios from "../../../assets//icons/test/Combined Shape (5).svg";
 import Sol from "../../../assets//icons/test/Combined Shape (6).svg";
 import Globo from "../../../assets//icons/test/globo-aerostatico.svg";
 
-import Cheese from "../../../assets/icons/cheese.png";
-import Campeche from "../../../assets/icons/campechex.png";
-import Breanch_grape from "../../../assets/icons/breanch_grape.png";
-import Olive from "../../../assets/icons/olive.png";
-
 import ExpA from "../../../assets/icons/expA.svg";
 import ExpB from "../../../assets/icons/expB.svg";
 import ExpC from "../../../assets/icons/expC.svg";
 import ExpD from "../../../assets/icons/expD.svg";
 import ExpE from "../../../assets/icons/expE.svg";
 import ExpF from "../../../assets/icons/expF.svg";
-
-import PaseoA from "../../../assets/icons/Paseo.svg";
-import PaseoB from "../../../assets/icons/PaseoB.svg";
-import PaseoC from "../../../assets/icons/PaseoC.svg";
-import PaseoD from "../../../assets/icons/PaseoD.svg";
-import PaseoE from "../../../assets/icons/PaseoE.svg";
-import PaseoF from "../../../assets/icons/PaseoF.svg";
 
 import GasA from "../../../assets/icons/gasA.svg";
 import GasB from "../../../assets/icons/gasB.svg";
@@ -49,20 +33,20 @@ import GasD from "../../../assets/icons/gasD.svg";
 import GasE from "../../../assets/icons/gasE.svg";
 import GasF from "../../../assets/icons/gasF.svg";
 
-import AlkimiaB from "../../../assets/icons/alkimiaB.png";
-import GoogleStore from "../../../assets/icons/googleStore.png";
-import AppleStore from "../../../assets/icons/appleStore.png";
-import PhoneB from "../../../assets/icons/phoneB.png";
-
 import Experiencias from "../../../assets/icons/Experiencias.svg";
 
 import "./LandingPage.scss";
-import PostCardViewx from "../../../components/molecules/PostCardView/PostCardViewx";
 import Carousel from "../../../components/molecules/Carousel/Carousel";
-import Map from "../../../components/molecules/Maps/Maps";
 import { useNavigate } from "react-router-dom";
-import Carrusel from "../../../components/organisms/Carrusel/Carrusel";
-import CarruselHome from "../../../components/atoms/CarruselHome/CarruselHome";
+import c8 from "../../../assets/guest/c8.png";
+import c3 from "../../../assets/guest/c3.png";
+import c4 from "../../../assets/guest/c4.png";
+import c5 from "../../../assets/guest/c5.png";
+import c6 from "../../../assets/guest/c6.png";
+import c7 from "../../../assets/guest/c7.png";
+import SintomaA from "../../../assets/guest/SintomaA.jpg";
+import SintomaD from "../../../assets/guest/SintomaD.png";
+import alimentos from "../../../assets/guest/alimentos.png";
 
 const LandingPage = () => {
     const [openPlace, setOpenPlace] = useState(false);
@@ -243,28 +227,23 @@ const LandingPage = () => {
     const blog = [
         {
             id: 1,
-            img: Cheese,
-            title: "Conoce México a través de sus Quesos",
-            descriptions: "México es un país lleno de sabores y hoy toca descubrirlo con un alimento que ha sido parte de nuestra cultura por cientos de años: Los...",
+            img: SintomaA,
+            title: "Sintomas ansiedad",
+            descriptions: "Taquicardias, falta de aire, temblor, ganas de huir, dificultad para concentrarse,Irritabilidad, ensimismamiento, dificultades para iniciar o seguir una conversación, molestias digestivas, náuseas, vómitos, “nudo” en el estómago,temor a perder el control, recelos, sospechas, incertidumbre, dificultad para tomar decisiones.",
         },
         {
             id: 2,
-            img: Campeche,
-            title: "Guía de viaje por Campeche",
-            descriptions: "Desde zonas arqueológicas milenarias, hasta zonas que denotan la modernidad y actualidad que se vive en este estado sureño. Hoy te...",
+            img: SintomaD,
+            title: "Sintomas depresion",
+            descriptions: "Sentimientos persistentes de tristeza, ansiedad o “vacío”, desesperanza o pesimismo,irritabilidad, frustración o intranquilidad,dolores y molestias,pérdida de interés o placer en las actividades y los pasatiempo, dolor de cabeza, calambres o problemas digestivos sin una causa física aparente, o que no se alivian ni con tratamiento",
         },
         {
             id: 3,
-            img: Breanch_grape,
-            title: "Las uvas y sus grandes aportaciones a la salud de tu piel",
-            descriptions: "Desde la antigüedad se conoce que las propiedades de las uvas aportan beneficios para la salud. Hipócrates, mejor conocido como el padre de la medicina recomendó el uso del vino...",
+            img: alimentos,
+            title: "Sintomas de transtornos alimentarios",
+            descriptions: "Comer descontroladamente, hacer dietas rigurosas, provocarse vómitos, abuso de laxantes y diuréticos, problemas con la dentadura, depresiones detectables, ir al baño después de comer, menstruaciones irregulares y preocupación exagerada por el peso.",
         },
-        {
-            id: 4,
-            img: Olive,
-            title: "El olivo en México",
-            descriptions: "Primero que nada, debemos tener claro que el aceite de oliva proviene del fruto del olivo, es decir, las aceitunas; y puesto que casi la...",
-        },
+        
     ];
 
     const products = [
@@ -303,51 +282,36 @@ const LandingPage = () => {
     const vinedo = [
         {
             id: 1,
-            img: PaseoA,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c8,
+            
+            
         },
         {
             id: 2,
-            img: PaseoB,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c3,
+            
+            
         },
         {
             id: 3,
-            img: PaseoC,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c4,
+            
+            
         },
         {
             id: 4,
-            img: PaseoD,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c5,
+            
         },
         {
             id: 5,
-            img: PaseoE,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c6,
+            
         },
         {
             id: 6,
-            img: PaseoF,
-            price: "$500.00",
-            priceReal: "$700.00",
-            title: "Paseo matutino",
-            number: "(1512)"
+            img: c7,
+            
         },
     ];
 
@@ -525,7 +489,7 @@ const LandingPage = () => {
                         <h3 className="secct3-title">Bienvenido a Better U</h3>
                         <p className="secct3-subTitle">
                         El test de Better U te ayudará a arrojar luces sobre la 
-                        existencia de un eventual problema psicológico para poder a orientarte a buscar 
+                        existencia de un eventual problema psicológico para poder orientarte a buscar 
                         ayuda cuando sea necesario.
                         </p>
                         <p className="secct3-subTitle">
@@ -535,7 +499,7 @@ const LandingPage = () => {
                 </div>
                 <div className="subLandingPage">
                     <img
-                        src={back}
+                        src={mentalhealth}
                         alt="background"
                         className="sub-background"
                     />
@@ -558,60 +522,67 @@ const LandingPage = () => {
                 <div className="secct6">
                     <div className="secct-6-A">
                         <p className="secct-6-A-title">
-                            Descubre experiencias mágicas
+                            ¿Por qué es importante la salud mental?
                         </p>
-                        <span className="secct-6-A-des">
-                            Comienza a vivir el apasionante mundo del vino.
-                        </span>
+                        
                         <br />
                         <span className="secct-6-B-des">
-                            Visita los mejores destinos del enoturismo en
-                            México.
+                        La salud mental tiene un impacto directo en nuestra forma de pensar, de sentir y de actuar. Determina cómo respondemos ante el estrés, cómo nos relacionamos con otras personas y cómo tomamos decisiones. 
+                        <br></br>
+                        Es por esto tan importante cuidar de ella como cuidamos de nuestro cuerpo físico.
+                        <br></br>
+                        La salud mental es importante en todas las etapas de la vida, desde la niñez y la adolescencia hasta la adultez y la vejez.
                         </span>
                     </div>
+
+                    <div className="secct-6-A">
+                        <p className="secct-6-A-title">
+                            ¿Qué puede afectar mi salud mental?
+                        </p>
+                        
+                        <br />
+                        <span className="secct-6-B-des">
+                        Hay diferentes factores que pueden afectar su salud mental, incluyendo:
+                        <br></br>
+                        -Factores biológicos, como los genes o la química del cerebro
+                        <br></br>
+                        -La inseguridad
+                        <br></br>
+                        -El rapido cambio social
+                        <br></br>
+                        -El estilo de vida, como la dieta, actividad física y consumo de sustancias
+                        <br></br>
+                        También puede verse afectada por factores y experiencias personales, la interacción social, los valores culturales, experiencias familiares, escolares y laborales.
+                        </span>
+                    </div>
+                    
                     <div className="secct-6-B">
-                        <h1 className="secct-6-B-title">Explora por viñedo</h1>
+                        <h1 className="secct-6-B-title">¿Sabías qué?</h1>
                         <Carousel object={vinedo}/>
                     </div>
-                    <div className="secct-6-B secB">
-                        <h1 className="secct-6-B-title">
-                            Explora por experiencia
-                        </h1>
-                        <Carousel object={exper}/>
-                    </div>
-                    <div className="secct-6-B secC">
-                        <h1 className="secct-6-B-title">
-                            Explora por gastronomia
-                        </h1>
-                        <Carousel object={gastro}/>
-                    </div>
+                    
                 </div>
                 <div className="secct7">
-                    <h1 className="secct7-title">¿Quieres ser anfitrión?</h1>
+                    <h1 className="secct7-title">¿Quieres realizar el test?</h1>
                     <div className="secct7-bodyA">
-                        Conviértete en anfitrión y deja que miles de alkimistas
-                        visiten tu vinícola, hotel, restaurante, o cualquier
-                        negocio que ofrezca experiencias y servicios
-                        enoturísticos. Si quieres saber más a cerca de volverte
-                        anfitrión, da click
+                    Realiza el test para saber tu posible diagnóstico, si tienes algún problema que afecte tu salud mental.
                     </div>
                     <p className="secct7-bodyA marg">
-                        Si quieres saber más a cerca de volverte anfitrión, da
-                        click
+                        Si quieres saber más, da click aqui
                     </p>
 
                     <div className="secct7-btn">
                         <div className="secct-7-btn">
                             <Button
-                                btnTitle={"Saber más"}
+                                btnTitle={"Iniciar sesion"}
                                 className={"border"}
-                                onClick={() => navigate("hosts")}
+                                onClick={() => navigate("start")}
                             />
                         </div>
                     </div>
                 </div>
                 <div className="secct8">
-                    <h1 className="secct8-title">Blog</h1>
+                    <h1 className="secct8-title">Para saber màs...</h1>
                     <div className="secct-8-body">
                         {blog.map((blog) => (
                             <div className="card-blog" key={blog.id}>
@@ -627,76 +598,13 @@ const LandingPage = () => {
                                     {blog.descriptions}
                                 </p>
 
-                                <div className="small-windows">
-                                    <img src={LogoColor} alt="Logo" className="smaall-icon"/>
-                                    <p className="akiloi">Alkimia</p>
-                                </div>
+                               
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="secct9">
-                    <div className="secct-9-texto">
-                        <div className="secct-9-container-logo">
-                            <img
-                                src={AlkimiaB}
-                                alt="Alkimia"
-                                className="secct-9-logo"
-                            />
-                        </div>
-                        <div className="secct-body">
-                            <h3 className="secct-body-title">
-                                Descarga la app
-                            </h3>
-                            <p className="secct-body-span">
-                                {" "}
-                                y comienza a catar México
-                            </p>
-                            <p className="secct-body-descr">
-                                Alkimia es la primer app de enoturismo en
-                                México. Descarga la app y reserva tus visitas a
-                                vinícolas, descubre viñedos, gastronomía de
-                                autor, hoteles únicos, experiencias y mucho más.
-                            </p>
-                            <div className="secct-9-btn">
-                                <div className="secct-9-cont">
-                                    <Button
-                                        btnTitle={"Saber más"}
-                                        className={"border"}
-                                        onClick={() => navigate("downloadApp")}
-                                    />
-                                </div>
-                            </div>
-                            <div className="secct-9-Store">
-                                <div className="containStore">
-                                    <img
-                                        src={GoogleStore}
-                                        alt="GoogleStore"
-                                        className="appStore"
-                                    />
-                                </div>
-                                <div className="containStore">
-                                    <img
-                                        src={AppleStore}
-                                        alt="AppleStore"
-                                        className="appStore"
-                                    />
-                                </div>
-                            </div>
-                            <div className="div-hiiden"></div>
-                        </div>
-                    </div>
-
-                    <div className="secct-phone-container">
-                        <div className="secct-9-sub">
-                            <img
-                                src={PhoneB}
-                                alt="phone"
-                                className="phone-secc"
-                            />
-                        </div>
-                    </div>
-                </div>
+                
+                
                 <div className="secct404 fina">
 
                 </div>

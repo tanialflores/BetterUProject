@@ -64,6 +64,8 @@
             text-decoration: none solid rgb(59, 59, 59);
             line-height: 37px;
             line-height: 20px;
+            display: flex;
+            text-align: justify;
         }
 
         .host-secct-c {
@@ -76,6 +78,15 @@
             flex-direction: column;
             gap: 21px;
             font-family: "Metropolis";
+            font-weight: 900;
+
+            .Tips{
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+                font-family: "Metropolis";
+                font-weight: 200;
+            }
         }
     }
 
@@ -247,7 +258,6 @@
             .host-secct-1-A {
                 font-size: 46px !important;
                 text-align: center;
-                margin-top: 116px !important;
             }
 
             .host-secct-1-B {
@@ -364,7 +374,7 @@
             display: flex;
             justify-content: center;
             .host-secct-4-form {
-                width: 761px !important;
+                width: 90% !important;
                 padding: 104px 104px 79px 104px !important;
                 .host-secct-4-title {
                     font-size: 46px !important;
@@ -374,6 +384,73 @@
                     margin-top: 38px !important;
                     margin-bottom: 41px !important;
                     font-size: 18.4px !important;
+                }
+
+                .ImgTips{
+                    .tip1{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip2{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip3{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip4{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip5{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip6{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip7{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip8{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip9{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip10{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip11{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip12{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip13{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip14{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip15{
+                        width: 50%;
+                        height: 350px;
+                    }
+                    .tip16{
+                        width: 50%;
+                        height: 350px;
+                    }
                 }
             }
         }

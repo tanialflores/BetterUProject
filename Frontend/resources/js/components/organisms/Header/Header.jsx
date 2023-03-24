@@ -9,6 +9,7 @@ import Button from "../../atoms/Button/Button";
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 
 const Header = ({ className }) => {
+    const auth = localStorage.getItem('auth')
     const [openSide, setOpenSide] = useState(false);
     const navigate = useNavigate();
 
@@ -112,22 +113,13 @@ const Header = ({ className }) => {
                             </div>
                             <div className="side-btns">
                                 <Button
-                                    btnTitle={"¡Comenzar ahora!"}
+                                    btnTitle={"Iniciar sesión"}
                                     className={
                                         url.pathname === "/"
                                             ? "border"
                                             : "border-color"
                                     }
                                     onClick={() => navigate("/start")}
-                                />
-                                <Button
-                                    btnTitle={"Descargar la app"}
-                                    className={
-                                        url.pathname === "/"
-                                            ? "border"
-                                            : "border-color"
-                                    }
-                                    onClick={() => navigate("downloadApp")}
                                 />
                             </div>
                         </div>
@@ -153,25 +145,27 @@ const Header = ({ className }) => {
                         </NavLink>
                     </div>
                     <div className="h-return">
-                        <Button
-                            btnTitle={"¡Comenzar ahora!"}
-                            height={"40px"}
-                            className={
-                                url.pathname === "/" ? "border" : "border-color"
-                            }
-                            onClick={() => navigate("/start")}
-                        />
+                        {!auth ?
+                            <Button
+                                btnTitle={"Iniciar sesión"}
+                                height={"40px"}
+                                className={
+                                    url.pathname === "/" ? "border" : "border-color"
+                                }
+                                onClick={() => navigate("/start")}
+                            />
+                            :
+                            <Button
+                                btnTitle={"Test"}
+                                height={"40px"}
+                                className={
+                                    url.pathname === "/" ? "border" : "border-color"
+                                }
+                                onClick={() => navigate("/test")}
+                            />
+                        }
                     </div>
-                    <div className="h-return">
-                        <Button
-                            btnTitle={"Descargar la app"}
-                            height={"40px"}
-                            className={
-                                url.pathname === "/" ? "border" : "border-color"
-                            }
-                            onClick={() => navigate("downloadApp")}
-                        />
-                    </div>
+                    
                 </div>
             </nav>
         </>

@@ -13,6 +13,7 @@ import "swiper/css/scrollbar";
 import "./CarruselHome.scss";
 import ReactStars from "../ReactStars/ReactStars";
 
+
 const CarruselHome = ({ object }) => {
     return (
         <Swiper
@@ -35,10 +36,6 @@ const CarruselHome = ({ object }) => {
                         <div className="Slide-descr-container">
                             <span className="Slide-descr">{e.title}</span>
                             <div className="numberlk">{e.number}</div>
-                        </div>
-
-                        <div className="Slide-score">
-                           <ReactStars size={20} numberStar={5}/>
                         </div>
                     </div>
                 </SwiperSlide>
