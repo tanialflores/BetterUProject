@@ -150,60 +150,128 @@
             }
         }
 
-        .h-return {
-            width: 233px !important;
-            position: relative !important;
-            overflow: hidden !important;
-            border-radius: 30px !important;
-            z-index: 1 !important;
-
-            .border {
-                height: 50px !important;
-                font-size: 14.72px !important;
-
-                &:hover {
-                    border: 2px solid #df1683;
+        .h-return{
+            .ButtonLogin {
+                width: 165% !important;
+                position: relative !important;
+                overflow: hidden !important;
+                border-radius: 30px !important;
+                z-index: 1 !important;
+    
+                .border {
+                    height: 50px !important;
+                    font-size: 14.72px !important;
+    
+                    &:hover {
+                        border: 2px solid #df1683;
+                    }
+    
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        right: calc(-100% - 80px);
+                        border-bottom: 80px solid #df1683;
+                        transition: 0.4s ease-in-out all;
+                    }
+    
+                    &:hover::after {
+                        right: 0;
+                    }
                 }
-
-                &::after {
-                    content: "";
-                    width: 100%;
-                    position: absolute;
-                    z-index: -1;
-                    top: 0;
-                    right: calc(-100% - 80px);
-                    border-bottom: 80px solid #df1683;
-                    transition: 0.4s ease-in-out all;
-                }
-
-                &:hover::after {
-                    right: 0;
+    
+                .border-color {
+                    height: 50px !important;
+                    font-size: 14.72px !important;
+    
+                    &:hover {
+                        border: 2px solid #df1683;
+                        color: #fff !important;
+                    }
+    
+                    &::after {
+                        content: "" !important;
+                        
+                        width: 100% !important;
+                        position: absolute;
+                        z-index: -1 !important;
+                        top: 0 !important;
+                        right: calc(-100% - 80px) !important;
+                        border-bottom: 80px solid #df1683 !important;
+                        transition: 0.4s ease-in-out all !important;
+                    }
+    
+                    &:hover::after {
+                        right: 0 !important;
+                    }
                 }
             }
+            .BotonesAuth{
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
 
-            .border-color {
-                height: 50px !important;
-                font-size: 14.72px !important;
-
-                &:hover {
-                    border: 2px solid #df1683;
-                    color: #fff !important;
-                }
-
-                &::after {
-                    content: "" !important;
-                    
+                .buttontest{
                     width: 100% !important;
-                    position: absolute;
-                    z-index: -1 !important;
-                    top: 0 !important;
-                    right: calc(-100% - 80px) !important;
-                    border-bottom: 80px solid #df1683 !important;
-                    transition: 0.4s ease-in-out all !important;
-                }
-
-                &:hover::after {
-                    right: 0 !important;
+                    position: relative !important;
+                    overflow: hidden !important;
+                    border-radius: 30px !important;
+                    z-index: 1 !important;
+        
+                    .border {
+                        height: 50px !important;
+                        font-size: 14.72px !important;
+        
+                        &:hover {
+                            border: 2px solid #df1683;
+                        }
+        
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            position: absolute;
+                            z-index: -1;
+                            top: 0;
+                            right: calc(-100% - 80px);
+                            border-bottom: 80px solid #df1683;
+                            transition: 0.4s ease-in-out all;
+                        }
+        
+                        &:hover::after {
+                            right: 0;
+                        }
+                    }
+        
+                    .border-color {
+                        height: 50px !important;
+                        font-size: 14.72px !important;
+        
+                        &:hover {
+                            border: 2px solid #df1683;
+                            color: #fff !important;
+                        }
+        
+                        &::after {
+                            content: "" !important;
+                            
+                            width: 100% !important;
+                            position: absolute;
+                            z-index: -1 !important;
+                            top: 0 !important;
+                            right: calc(-100% - 80px) !important;
+                            border-bottom: 80px solid #df1683 !important;
+                            transition: 0.4s ease-in-out all !important;
+                        }
+        
+                        &:hover::after {
+                            right: 0 !important;
+                        }
+                    }
                 }
             }
         }

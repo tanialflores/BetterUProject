@@ -592,7 +592,7 @@ const LandingPage = () => {
                 </div>
                 }
                 <div className="secct8">
-                    <h1 className="secct8-title">Para saber màs...</h1>
+                    <h1 className="secct8-title">Para saber más...</h1>
                     <div className="secct-8-body">
                         {blog.map((blog) => (
                             <div className="card-blog" key={blog.id}>

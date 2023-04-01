@@ -4,16 +4,17 @@ const { Jsonwt } = require("../helpers/jwt");
 
 const userStore = async(req, res) => {
     const { email, password } = req.body;
-
     try {
         const searchEmail = await User.findOne({ where: { email } })
         if(searchEmail){
             return res.status(409).json({ msg: 'El correo ingresado ya existe' })
         }
-
+        
         const hashedPassword = await bcrypt.hash(password, 10);
-    
+        
+        console.log('entro')
         const user = await User.create({ email, password: hashedPassword })
+        console.log('entro2', user)
         if(!user){
             return res.status(500).json({ msg: 'Hubo un problema, intente nuevamente' })
         }

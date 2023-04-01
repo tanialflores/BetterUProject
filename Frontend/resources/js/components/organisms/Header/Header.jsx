@@ -8,8 +8,8 @@ import "./Header.scss";
 import Button from "../../atoms/Button/Button";
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 
-const Header = ({ className }) => {
-    const auth = localStorage.getItem('auth')
+const Header = ({ auth }) => {
+    // const auth = localStorage.getItem('auth')
     const [openSide, setOpenSide] = useState(false);
     const navigate = useNavigate();
 
@@ -146,23 +146,38 @@ const Header = ({ className }) => {
                     </div>
                     <div className="h-return">
                         {!auth ?
-                            <Button
-                                btnTitle={"Iniciar sesión"}
-                                height={"40px"}
-                                className={
-                                    url.pathname === "/" ? "border" : "border-color"
-                                }
-                                onClick={() => navigate("/start")}
-                            />
+                            <div className="ButtonLogin">
+                                <Button
+                                    btnTitle={"Ingresar"}
+                                    height={"40px"}
+                                    className={
+                                        url.pathname === "/" ? "border" : "border-color"
+                                    }
+                                    onClick={() => navigate("/start")}
+                                />
+                            </div>
                             :
-                            <Button
-                                btnTitle={"Test"}
-                                height={"40px"}
-                                className={
-                                    url.pathname === "/" ? "border" : "border-color"
-                                }
-                                onClick={() => navigate("/test")}
-                            />
+                        <>
+                            <div className="BotonesAuth">
+                                <div className="buttontest">
+                                    <Button
+                                        btnTitle={"Test"}
+                                        height={"40px"}
+                                        className={
+                                            url.pathname === "/" ? "border2" : "border-color2"
+                                        }
+                                        onClick={() => navigate("/test")}
+                                    />
+                                </div>
+                                <div className="ButtonClose">
+                                    <NavLink to={'/'} onClick={() => {localStorage.setItem("auth", false)}}>
+                                        <div className='loginBtn'>
+                                            <div className='l_rig'>Cerrar sesión</div>
+                                        </div>
+                                    </NavLink>
+                                </div>
+                            </div>
+                        </>
                         }
                     </div>
                     

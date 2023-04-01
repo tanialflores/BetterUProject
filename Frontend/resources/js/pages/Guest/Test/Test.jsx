@@ -8,12 +8,12 @@ const Test = () => {
     const [mensajes, setMensajes] = useState([
         {
             autor: 'Cliente',
-            contenido: 'Hola, buen día. Tengo problemas con mi compra',
+            contenido: 'Hola, sí claro ',
             tiempo: new Date()
         },
         {
             autor: 'Proveedor',
-            contenido: 'Hola, Santiago ¿Cómo podemos ayudarte?',
+            contenido: 'Hola, el test te ayudará a saber sobre un posible trastorno ¿Comenzamos?',
             tiempo: new Date()
         },
     ]);
