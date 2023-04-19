@@ -170,11 +170,9 @@ const Header = ({ auth }) => {
                                     />
                                 </div>
                                 <div className="ButtonClose">
-                                    <NavLink to={'/'} onClick={() => {localStorage.setItem("auth", false)}}>
-                                        <div className='loginBtn'>
+                                        <div className='BtnClose' onClick={() => {localStorage.clear(); location.reload()}}>
                                             <div className='l_rig'>Cerrar sesión</div>
                                         </div>
-                                    </NavLink>
                                 </div>
                             </div>
                         </>

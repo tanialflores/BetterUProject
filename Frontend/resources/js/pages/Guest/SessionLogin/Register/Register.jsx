@@ -46,7 +46,7 @@ const Register = () => {
             }
 
             await axios.post(`${url}register`, sendData).then((res) => {
-                navigate("/register-code");
+                navigate("/");
                 console.log('res', res)
             }).catch((err) => {
                 console.log('err', err)
@@ -104,7 +104,7 @@ const Register = () => {
                         onClick={() => backPage()}
                     />
                     <Button
-                        btnTitle={"Verificar correo"}
+                        btnTitle={"Ingresar"}
                         className={"degradado"}
                         onClick={() => handleSubmit()}
                     />
