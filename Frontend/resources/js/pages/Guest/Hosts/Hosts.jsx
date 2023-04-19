@@ -248,19 +248,12 @@ const Hosts = () => {
             <div className="host-secct2">
                 <div>
                     <h4 className="host-secct-2-title">
-                        ¿Quieres realizar el test?
+                        ¡Holaaaa...!
                     </h4>
                     <p className="host-secct-2-body">
-                        Realiza el test para saber tu posible diagnóstico, si tienes algún problema que afecte
-                        tu salud mental.
+                        Este es el capitulo de tu vida en el que tienes que ser fuerte,
+                        en los próximos te prometo que te tocará ser feliz. ¡Ánimo!
                     </p>
-                    <div className="host-secct-2-btn">
-                        <Button
-                            className={"border"}
-                            btnTitle={"Iniciar sesión"}
-                            onClick={() => navigate("register")}
-                        />
-                    </div>
                 </div>
             </div>
             <div className="first-div-sep"></div>

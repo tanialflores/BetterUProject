@@ -21,9 +21,9 @@ export default function MainRoute() {
     );
 }
 
-if (document.getElementById("reactRoute")) {
+
     ReactDOM.render(
         <MainRoute />,
         document.getElementById("reactRoute")
     );
-}
+

@@ -222,13 +222,15 @@
                     overflow: hidden !important;
                     border-radius: 30px !important;
                     z-index: 1 !important;
+                    background-color: #8331a7;
         
-                    .border {
+                    .border2 {
                         height: 50px !important;
                         font-size: 14.72px !important;
         
                         &:hover {
                             border: 2px solid #df1683;
+                            background-color: #df1683;
                         }
         
                         &::after {
@@ -247,7 +249,7 @@
                         }
                     }
         
-                    .border-color {
+                    .border-color2 {
                         height: 50px !important;
                         font-size: 14.72px !important;
         
@@ -271,6 +273,24 @@
                         &:hover::after {
                             right: 0 !important;
                         }
+                    }
+                }
+
+                .ButtonClose{
+                    .BtnClose{
+                        border-radius: 30px;
+                        width: 196%;
+                        height: 45px;
+                        color: #fff;
+                        font-weight: bold;
+                        font-family: "Metropolis";
+                        cursor: pointer;
+                        background: transparent;
+                        // border: 1px solid #ffff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #df1683;
                     }
                 }
             }

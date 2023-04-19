@@ -4,6 +4,10 @@ import Button from "../../../../components/atoms/Button/Button";
 import Input from "../../../../components/atoms/Input/Input";
 import InputPassword from "../../../../components/atoms/InputPassword/InputPassword";
 import { errorResponse, postAxiosGuest } from "../../../../utilities/Axios";
+import axios from 'axios';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content';
+const MySwal = withReactContent(Swal)
 
 import {
     ColorValidation,
@@ -16,6 +20,7 @@ import "./Login.scss";
 
 const Login = ({  }) => {
     const navigate = useNavigate();
+    const url = process.env.MIX_URL
     const [inputList, setInputList] = useState({
         email: { value: null, validationType: "empty" },
         password: { value: null, validationType: "empty" },
@@ -32,11 +37,11 @@ const Login = ({  }) => {
         }
     }, [inputList]);
 
-    const handleSubmit = () => {
-        const validate = SubmitValidation(inputList, setInputList)
-        if (validate) {
-            localStorage.setItem('auth', true)
-            navigate('/')
+    // const handleSubmit = () => {
+    //     const validate = SubmitValidation(inputList, setInputList)
+    //     if (validate) {
+    //         localStorage.setItem('auth', true)
+    //         location.href = location.origin + "/"
             // const formData = new FormData()
             
             // formData.append('email', inputList.email.value)
@@ -50,8 +55,41 @@ const Login = ({  }) => {
             // }
 
             // postAxiosGuest('api/auth/mobile/login', resThen, errorResponse, formData)
+    //     }
+    // };
+    const validateLogin = async () => {
+        if(SubmitValidation(inputList, setInputList)) {
+
+            MySwal.fire({
+                didOpen: () => {
+                    Swal.showLoading()
+                    },
+                title:"Validando credenciales de acceso",
+                text:"Espere un momento..",
+                showConfirmButton: false,
+                timer:3000,
+            });
+            
+            //variable para enviar correo y contraseñas, formato JSON
+            const sendData = {
+                email: inputList.email.value,
+                password: inputList.password.value,
+            }
+            
+            await axios.post(`${url}login`, sendData).then((res) => {
+                localStorage.setItem('auth', true)
+                location.href = location.origin + "/";
+            }).catch((err) => {
+                MySwal.fire({
+                    title:"Ocurrio un error",
+                    text: err.msg,
+                    showConfirmButton: false,
+                    timer: 3000
+                });
+
+            })
         }
-    };
+    }
 
     return (
         <div className="Login">
@@ -88,8 +126,7 @@ const Login = ({  }) => {
                         </div>
                         <NavLink
                             to={"/recover-account"}
-                            className="lsecct-1-forgot"
-                        >
+                            className="lsecct-1-forgot">
                             Olvide mi contraseña
                         </NavLink>
                     </div>
@@ -97,7 +134,7 @@ const Login = ({  }) => {
                         <Button
                             btnTitle={"Iniciar sesión"}
                             className={"degradado"}
-                            onClick={() => handleSubmit()}
+                            onClick={validateLogin}
                         />
                     </div>
                 </div>
