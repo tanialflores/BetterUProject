@@ -6,12 +6,24 @@ import Send from '../../../assets/Auth/send.svg'
 
 import "./ChatAlkimia.scss"
 
-const ChatAlkimia = ({mensajes, setMensajes}) => {
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:8000');
+
+const ChatAlkimia = ({}) => {
     const [nuevoMensaje, setNuevoMensaje] = useState("");
-    const [esCliente, setEsCliente] = useState(true);
     const navigate = useNavigate()
 
     const buttonRef = useRef()
+
+    const [mensajes, setMensajes] = useState(null);
+
+    useEffect(() => {
+        socket.on('message', (msg) => {
+            const array = [...msg]
+            setMensajes(array);
+        });
+      }, [mensajes]);
 
     useEffect(() => {
         const handleEnter = (event) => {
@@ -24,26 +36,29 @@ const ChatAlkimia = ({mensajes, setMensajes}) => {
           document.removeEventListener("keydown", handleEnter);
         };
       }, []);
-    
-    const handleMessage = () => {
-        if (nuevoMensaje.trim()) {
-            const autor = esCliente ? "Cliente" : "Proveedor"; // Establece el autor del mensaje
-            const nuevoMensajeObj = { autor, contenido: nuevoMensaje, tiempo: new Date() }; // Crea un objeto para representar el mensaje
-            setMensajes([...mensajes, nuevoMensajeObj]); // Agrega el nuevo mensaje al arreglo de mensajes
-            setNuevoMensaje("");
-            document.getElementById("send-mess").value = ""
-          }
-    }
 
-  return (
+    const handleMessage = (e) => {
+        e.preventDefault()
+        socket.emit('connection', nuevoMensaje);
+        setNuevoMensaje('');
+        // if (nuevoMensaje.trim()) {
+        //     const autor = esCliente ? "Cliente" : "Proveedor"; // Establece el autor del mensaje
+        //     const nuevoMensajeObj = { autor, contenido: nuevoMensaje, tiempo: new Date() }; // Crea un objeto para representar el mensaje
+        //     setMensajes([...mensajes, nuevoMensajeObj]); // Agrega el nuevo mensaje al arreglo de mensajes
+        //     setNuevoMensaje("");
+        //     document.getElementById("send-mess").value = ""
+        //   }
+    }
+    console.log('msg', mensajes);
+    return (
     <div className="cnt-cards-c">
         <div className="cnt-chat-c">
-            {mensajes.map((mensaje, index) => (
+            {mensajes&&mensajes.map((mensaje, index) => (
                 <div className='cntm-messa' key={index}>
                     <div className={`mensaje ${mensaje.autor === "Proveedor" ? "proveedor" : "cliente"}`}>
-                        {mensaje.contenido}
+                        {mensaje.text}
                     </div>
-                    <label className={`hours-r ${mensaje.autor === "Proveedor" ? "labelpr" : "labelcli"}`}>{mensaje.tiempo.toLocaleTimeString()}</label>
+                    {/* <label className={`hours-r ${mensaje.autor === "Proveedor" ? "labelpr" : "labelcli"}`}>{mensaje.tiempo.toLocaleTimeString()}</label> */}
                 </div>
             ))}
         </div>
@@ -52,7 +67,7 @@ const ChatAlkimia = ({mensajes, setMensajes}) => {
             <img src={Send} alt="" className='s-send' onClick={handleMessage} ref={buttonRef} id="idMyImage"/>
         </div>
     </div>
-  )
+    )
 }
 
 export default ChatAlkimia
