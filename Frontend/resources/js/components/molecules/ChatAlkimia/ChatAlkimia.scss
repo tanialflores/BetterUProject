@@ -101,10 +101,72 @@
         display: flex;
         align-items: center;
         gap: 13px;
+        display: flex;
+        justify-content: center;
 
         @media (min-width: 1000px) {
             width: 62%;
             padding-right: 15px;
+        }
+
+        .Options{
+            display: flex;
+            flex-direction: row;
+            gap: 21px;
+
+            .TextFrequent{
+                width: 145px;
+                display: flex;
+                height: 40px;
+                border-radius: 30px;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border: 3px solid #EE4485;
+                color: #EE4485;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #EE4485;
+                    color:#ffffff;
+                }
+            }
+
+            .TextSome{
+                width: 145px;
+                display: flex;
+                height: 40px;
+                border-radius: 30px;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border: 3px solid #8F6CBB;
+                color: #8F6CBB;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #8F6CBB;
+                    color:#ffffff;
+                }
+            }
+
+            .Never{
+                width: 145px;
+                display: flex;
+                height: 40px;
+                border-radius: 30px;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border: 3px solid #1D9626;
+                color: #1D9626;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #1D9626;
+                    color:#ffffff;
+                }
+            }
         }
 
         .input-t {
