@@ -48,7 +48,12 @@ const ChatAlkimia = ({mensajes, setMensajes}) => {
             ))}
         </div>
         <div className="cnt-input">
-            <input type="text" placeholder='Escribe aquí...' className='input-t' id="send-mess" onChange={(e) => setNuevoMensaje(e.target.value)}/>
+            {/* <input type="text" placeholder='Escribe aquí...' className='input-t' id="send-mess" onChange={(e) => setNuevoMensaje(e.target.value)}/> */}
+            <div className='Options'>
+                <div className='TextFrequent'>Frecuentemente</div>
+                <div className='TextSome'>Algunas veces</div>
+                <div className='Never'>Nunca</div>
+            </div>
             <img src={Send} alt="" className='s-send' onClick={handleMessage} ref={buttonRef} id="idMyImage"/>
         </div>
     </div>
