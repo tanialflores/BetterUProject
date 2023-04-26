@@ -194,13 +194,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // Knp\Snappy\ServiceProvider::class,
 
     ],
     
-    'providers' => [
-        // ...
-        Knp\Snappy\ServiceProvider::class,
-    ],
+    // 'providers' => [
+    //     // ...
+    //     Knp\Snappy\ServiceProvider::class,
+    // ],
 
     /*
     |--------------------------------------------------------------------------

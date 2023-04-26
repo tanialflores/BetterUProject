@@ -19,6 +19,6 @@
     </head>
     <body class="BetterU">
             <div class="Title">Resultados del test</div>
-            <div class="Subtitle">Recuerda que este resultado es un posible diagnostico que </div>
+            <div class="Subtitle">Recuerda que este resultado es un posible diagnostico</div>
     </body>
 </html>
