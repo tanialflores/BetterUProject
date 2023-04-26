@@ -11,6 +11,7 @@ const io = require('socket.io')(server, {
     credentials: true
   }
 });
+const test = require('./test.json')
 
 app.options('*', cors());
 // Http
@@ -36,23 +37,17 @@ sequelize.sync({ force: false }).then(() => {
   console.log('Hubo un error al sincronizar Sequelize con la base de datos:', error);
 });
 
-//socket.io
-var messages = [
-  {
-    author: "Carlos",
-    text: "Hola! que tal?",
-  },
-  {
-    author: "Pepe",
-    text: "Muy bien! y tu??",
-  },
-  {
-    author: "Paco",
-    text: "Genial!",
-  },
-];
+
 io.on('connection', (socket) => {
-  socket.emit('message', messages) 
+ 
+  io.emit('message', test[0])
+
+  socket.on('message', (msg) => {
+    io.emit('message', msg)
+    if(msg.id === 1) io.emit('message', test[1])
+    if(msg.id === 2) io.emit('message', test[2])
+  })
+
 });
 
 // Escuchador de backend

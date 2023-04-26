@@ -196,11 +196,11 @@ return [
         App\Providers\RouteServiceProvider::class,
 
     ],
-    
-    'providers' => [
-        // ...
-        Knp\Snappy\ServiceProvider::class,
-    ],
+
+    // 'providers' => [
+    //     // ...
+    //     Knp\Snappy\ServiceProvider::class,
+    // ],
 
     /*
     |--------------------------------------------------------------------------
