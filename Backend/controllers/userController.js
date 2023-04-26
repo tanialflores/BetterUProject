@@ -6,15 +6,15 @@ const userStore = async(req, res) => {
     const { email, password } = req.body;
     try {
         const searchEmail = await User.findOne({ where: { email } })
+
         if(searchEmail){
             return res.status(409).json({ msg: 'El correo ingresado ya existe' })
         }
         
         const hashedPassword = await bcrypt.hash(password, 10);
         
-        console.log('entro')
         const user = await User.create({ email, password: hashedPassword })
-        console.log('entro2', user)
+
         if(!user){
             return res.status(500).json({ msg: 'Hubo un problema, intente nuevamente' })
         }
@@ -39,9 +39,7 @@ const userLogin = async(req, res) => {
         if(!user){
             return res.status(400).json({ msg: "El correo o contraseña son incorrectos" })
         }
-        if(user.email !== email){
-            return res.status(400).json({ msg: "El correo o contraseña son incorrectos" })
-        }
+
         //Verificar la contraseña
         const validatePassword = bcrypt.compareSync(password, user.password)
         if(!validatePassword){

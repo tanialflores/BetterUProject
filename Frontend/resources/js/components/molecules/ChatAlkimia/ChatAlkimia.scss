@@ -132,6 +132,11 @@
                 }
             }
 
+            .TextFrequentH {
+                background-color: #EE4485;
+                color:#ffffff;
+            }
+
             .TextSome{
                 width: 145px;
                 display: flex;
@@ -148,6 +153,11 @@
                     background-color: #8F6CBB;
                     color:#ffffff;
                 }
+            }
+
+            .TextSomeH {
+                background-color: #8F6CBB;
+                color:#ffffff;
             }
 
             .Never{
@@ -167,6 +177,11 @@
                     color:#ffffff;
                 }
             }
+
+            .NeverH {
+                background-color: #1D9626;
+                color:#ffffff;
+            }
         }
 
         .input-t {
@@ -179,7 +194,7 @@
             outline: none;
             color: #000000;
             box-shadow: inset 2px 1px 5px rgba(0, 0, 0, 0.12);
-        
+
             @media (min-width: 1000px) {
                 width: 100%;
             }

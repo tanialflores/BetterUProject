@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import Guest from "./Guest/Guest";
 
@@ -22,8 +22,7 @@ export default function MainRoute() {
 }
 
 
-    ReactDOM.render(
-        <MainRoute />,
-        document.getElementById("reactRoute")
-    );
+ReactDOM.createRoot(document.getElementById("reactRoute")).render(
+    <MainRoute />
+);
 

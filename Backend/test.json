@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "author": "proveedor",
+        "text": "¿Hay momento del día en que sientes temblores en tu cuerpo sin ninguna razón?"
+    },
+    {
+        "id": 2,
+        "author": "proveedor",
+        "text": "¿Experimentas preocupación excesiva sin motivo aparente?"
+    },
+    {
+        "id": 3,
+        "author": "proveedor",
+        "text": "¿Antes de llegar a un lugar como la escuela comienzas a sentir un temor que no te permite llegar a tu destino?"
+    }
+]
