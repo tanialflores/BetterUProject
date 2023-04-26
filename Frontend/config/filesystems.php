@@ -73,4 +73,9 @@ return [
         public_path('storage') => storage_path('app/public'),
     ],
 
+    'credit_notes' => [
+        'driver' => 'local',
+        'root' => storage_path('app'),
+    ],
+
 ];

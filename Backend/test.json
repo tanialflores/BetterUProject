@@ -13,5 +13,305 @@
         "id": 3,
         "author": "proveedor",
         "text": "¿Antes de llegar a un lugar como la escuela comienzas a sentir un temor que no te permite llegar a tu destino?"
+    },
+    {
+        "id": 4,
+        "author": "proveedor",
+        "text": "¿Has sentido tu ritmo cardíaco más acelerado sin importar qué estás haciendo?"
+    },
+    {
+        "id": 5,
+        "author": "proveedor",
+        "text": "¿Hay ocasiones en que sin importar lo que haces comienzas a tener una respiración entrecortada?"
+    },
+    {
+        "id": 6,
+        "author": "proveedor",
+        "text": "¿Experimentas mareos o náuseas sin tener un problema de salud?"
+    },
+    {
+        "id": 7,
+        "author": "proveedor",
+        "text": "¿Presentas tensión muscular sin tener motivos de estrés?"
+    },
+    {
+        "id": 8,
+        "author": "proveedor",
+        "text": "Constantemente tienes dificultad para concentrarte en actividades escolares, de la casa o donde se requiere prestar atención"
+    },
+    {
+        "id": 9,
+        "author": "proveedor",
+        "text": "¿Presentas dolores físicos como dolor de cabeza o estómago sin un motivo aparente?"
+    },
+    {
+        "id": 10,
+        "author": "proveedor",
+        "text": "Los últimos seis meses evitas realizar actividades escolares o sociales"
+    },
+    {
+        "id": 11,
+        "author": "proveedor",
+        "text": "Con frecuencia experimentas miedo a que tu o algún familiar cercano a ti enferme de gravedad"
+    },
+    {
+        "id": 12,
+        "author": "proveedor",
+        "text": "Sientes una gran exigencia por tener un excelente desempeño escolar"
+    },
+    {
+        "id": 13,
+        "author": "proveedor",
+        "text": "Experimentas angustia si no sacas buenas calificaciones por miedo a la reacción de tu familia"
+    },
+    {
+        "id": 14,
+        "author": "proveedor",
+        "text": "Constantemente sientes un gran miedo a que suceda un desastre natural"
+    },
+    {
+        "id": 15,
+        "author": "proveedor",
+        "text": "Cada vez que te sientes angustiado experimentas dolor en cierta parte del cuerpo como estómago, cabeza o tensión muscular"
+    },
+    {
+        "id": 16,
+        "author": "proveedor",
+        "text": "Hay sudoración excesiva en pies o manos cuando tienes pensamientos o vives situaciones de nerviosismo"
+    },
+    {
+        "id": 17,
+        "author": "proveedor",
+        "text": "Cuando te enojas, asustas o estás bajo presión experimentas temblor en tu cuerpo, tensión muscular, sudoración, lagrimeo, manchas en la piel"
+    },
+    {
+        "id": 18,
+        "author": "proveedor",
+        "text": "Te muestras renuente a seguir las reglas de tu casa o escuela solo porque no tienes ganas o deseos de obedecer"
+    },
+    {
+        "id": 19,
+        "author": "proveedor",
+        "text": "Te resistes a asistir a la escuela solo porque no sientes el deseo de acudir"
+    },
+    {
+        "id": 20,
+        "author": "proveedor",
+        "text": "Sientes que no tienes mucha paciencia y tu estado emocional se irrita rápidamente"
+    },
+    {
+        "id": 21,
+        "author": "proveedor",
+        "text": "Recientemente fuiste testigo de un accidente, acto de violencia o desastre natural"
+    },
+    {
+        "id": 22,
+        "author": "proveedor",
+        "text": "Poca o nula motivación para hacer actividades de la vida cotidiana"
+    },
+    {
+        "id": 23,
+        "author": "proveedor",
+        "text": "Experimentas preocupación cuando escuchas o hablas sobre la muerte"
+    },
+    {
+        "id": 24,
+        "author": "proveedor",
+        "text": "Tu grupo de amigos se ha reducido los últimos seis meses"
+    },
+    {
+        "id": 25,
+        "author": "proveedor",
+        "text": "Tu desempeño escolar ha empeorado los últimos seis meses"
+    },
+    {
+        "id": 26,
+        "author": "proveedor",
+        "text": "Consideras que eres una persona con poca valía"
+    },
+    {
+        "id": 27,
+        "author": "proveedor",
+        "text": "Crees que no mereces que sucedan cosas buenas en tu vida"
+    },
+    {
+        "id": 28,
+        "author": "proveedor",
+        "text": "Consideras que no eres capaz de desarrollar tus habilidades"
+    },
+    {
+        "id": 29,
+        "author": "proveedor",
+        "text": "Dificultad para tomar decisiones"
+    },
+    {
+        "id": 30,
+        "author": "proveedor",
+        "text": "Dejas de realizar actividades que antes te parecían divertidas o interesantes"
+    },
+    {
+        "id": 31,
+        "author": "proveedor",
+        "text": "Has consumido alcohol o sustancias ilegales para elevar tu estado de ánimo"
+    },
+    {
+        "id": 32,
+        "author": "proveedor",
+        "text": "La mayor parte del tiempo sientes que todo lo que haces te sale mal"
+    },
+    {
+        "id": 33,
+        "author": "proveedor",
+        "text": "Presentas dificultad para tomar decisiones de cualquier tipo"
+    },
+    {
+        "id": 34,
+        "author": "proveedor",
+        "text": "Muchas veces te sientes solo"
+    },
+    {
+        "id": 35,
+        "author": "proveedor",
+        "text": "Sientes que nadie te quiere"
+    },
+    {
+        "id": 36,
+        "author": "proveedor",
+        "text": "No te gusta como eres"
+    },
+    {
+        "id": 37,
+        "author": "proveedor",
+        "text": "Últimamente sientes que nada te divierte"
+    },
+    {
+        "id": 38,
+        "author": "proveedor",
+        "text": "La mayor parte del tiempo evitas pasar tiempo con mi familia o amigos"
+    },
+    {
+        "id": 39,
+        "author": "proveedor",
+        "text": "Consideras que eres una persona mala"
+    },
+    {
+        "id": 40,
+        "author": "proveedor",
+        "text": "Piensas que lastimas a las personas y es mejor alejarte de ellas"
+    },
+    {
+        "id": 41,
+        "author": "proveedor",
+        "text": "Discutes o peleas con los demás"
+    },
+    {
+        "id": 42,
+        "author": "proveedor",
+        "text": "Te sientes irritable o te enfadas con los demás fácilmente"
+    },
+    {
+        "id": 43,
+        "author": "proveedor",
+        "text": "Constantemente mides las calorías de los alimentos para evitar ganar peso"
+    },
+    {
+        "id": 44,
+        "author": "proveedor",
+        "text": "Realizas dietas sin supervisión médica de manera frecuente"
+    },
+    {
+        "id": 45,
+        "author": "proveedor",
+        "text": "Realizas ayunos prolongados para evitar comer de más"
+    },
+    {
+        "id": 46,
+        "author": "proveedor",
+        "text": "Realizas actividades físicas vigorosas más de tres veces al día para evitar aumentar de peso"
+    },
+    {
+        "id": 47,
+        "author": "proveedor",
+        "text": "Constantemente utilizas laxantes para evitar ganar peso"
+    },
+    {
+        "id": 48,
+        "author": "proveedor",
+        "text": "Has provocado el vómito para evitar ganar peso"
+    },
+    {
+        "id": 49,
+        "author": "proveedor",
+        "text": "Te sientes inseguro(a) de mostrar tu cuerpo"
+    },
+    {
+        "id": 50,
+        "author": "proveedor",
+        "text": "Te sientes insatisfecha(o) con tu imagen corporal"
+    },
+    {
+        "id": 51,
+        "author": "proveedor",
+        "text": "Consideras que tu imagen personal define tu éxito en la vida"
+    },
+    {
+        "id": 52,
+        "author": "proveedor",
+        "text": "Has presentado malestares físicos sin motivo aparente"
+    },
+    {
+        "id": 53,
+        "author": "proveedor",
+        "text": "Consideras que tu valor como persona depende de tu imagen corporal"
+    },
+    {
+        "id": 54,
+        "author": "proveedor",
+        "text": "Sientes que las personas de tu alrededor mienten sobre tu imagen corporal"
+    },
+    {
+        "id": 55,
+        "author": "proveedor",
+        "text": "Constantemente revisas o comparas las cantidades calóricas de los productos que consumes"
+    },
+    {
+        "id": 56,
+        "author": "proveedor",
+        "text": "Intentas ocultar partes de tu cuerpo utilizando ropa holgada"
+    },
+    {
+        "id": 57,
+        "author": "proveedor",
+        "text": "Los últimos seis meses evitas salir con tu grupo de amigos"
+    },
+    {
+        "id": 58,
+        "author": "proveedor",
+        "text": "Prefieres consumir tus alimentos alejado de las personas"
+    },
+    {
+        "id": 59,
+        "author": "proveedor",
+        "text": "Mientes sobre lo que comes"
+    },
+    {
+        "id": 60,
+        "author": "proveedor",
+        "text": "Utilizas este tipo de frases 'ya comí' o 'no tengo hambre' para evitar comer en muchos momentos sientes que tienes baja autoestima"
+    },
+    {
+        "id": 61,
+        "author": "proveedor",
+        "text": "En algunos momentos sientes un deseo incontrolable de comer excesivamente"
+    },
+    {
+        "id": 62,
+        "author": "proveedor",
+        "text": "Has realizado una gran cantidad de dietas diversas"
+    },
+    {
+        "id": 63,
+        "author": "proveedor",
+        "text": "Has experimentado periodos de sobreingesta de alimentos para después tener periodos de abstinencia de los mismos"
     }
 ]
