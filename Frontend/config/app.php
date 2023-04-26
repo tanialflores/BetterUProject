@@ -197,6 +197,11 @@ return [
 
     ],
 
+    // 'providers' => [
+    //     // ...
+    //     Knp\Snappy\ServiceProvider::class,
+    // ],
+
     /*
     |--------------------------------------------------------------------------
     | Class Aliases

@@ -8,12 +8,13 @@ import {
     SubmitValidation,
     UpdateValue,
 } from "../../../../utilities/Validations";
+import axios from 'axios'
 
 import "./Register.scss";
 
 const Register = () => {
     const navigate = useNavigate();
-
+    const url = process.env.MIX_URL
     const [inputList, setInputList] = useState({
         email: { value: null, validationType: "email" },
         password: { value: null, validationType: "empty" },
@@ -35,9 +36,21 @@ const Register = () => {
         navigate("/start");
     };
 
-    const handleSubmit = () => {
-        if (SubmitValidation(inputList, setInputList)) {
-            navigate("/register-code");
+    const handleSubmit = async() => {
+        const validate = SubmitValidation(inputList, setInputList)
+        if (validate) {
+
+            const sendData = {
+                email: inputList.email.value,
+                password: inputList.password.value
+            }
+
+            await axios.post(`${url}register`, sendData).then((res) => {
+                navigate("/");
+                console.log('res', res)
+            }).catch((err) => {
+                console.log('err', err)
+            })
         }
     };
 
@@ -91,7 +104,7 @@ const Register = () => {
                         onClick={() => backPage()}
                     />
                     <Button
-                        btnTitle={"Verificar correo"}
+                        btnTitle={"Ingresar"}
                         className={"degradado"}
                         onClick={() => handleSubmit()}
                     />

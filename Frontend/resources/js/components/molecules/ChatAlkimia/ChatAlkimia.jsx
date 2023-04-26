@@ -6,53 +6,60 @@ import Send from '../../../assets/Auth/send.svg'
 
 import "./ChatAlkimia.scss"
 
-const ChatAlkimia = ({mensajes, setMensajes}) => {
-    const [nuevoMensaje, setNuevoMensaje] = useState("");
-    const [esCliente, setEsCliente] = useState(true);
-    const navigate = useNavigate()
+import io from 'socket.io-client';
 
-    const buttonRef = useRef()
+const socket = io('http://localhost:8000');
+
+const ChatAlkimia = ({}) => {
+
+    const [buttonS, setButtonS] = useState('');
+    const [messages, setMessages] = useState([]);
 
     useEffect(() => {
-        const handleEnter = (event) => {
-          if (event.keyCode === 13) { // 13 es el código de tecla para Enter
-            buttonRef.current.click();
-          }
-        };
-        document.addEventListener("keydown", handleEnter);
-        return () => {
-          document.removeEventListener("keydown", handleEnter);
-        };
-      }, []);
-    
-    const handleMessage = () => {
-        if (nuevoMensaje.trim()) {
-            const autor = esCliente ? "Cliente" : "Proveedor"; // Establece el autor del mensaje
-            const nuevoMensajeObj = { autor, contenido: nuevoMensaje, tiempo: new Date() }; // Crea un objeto para representar el mensaje
-            setMensajes([...mensajes, nuevoMensajeObj]); // Agrega el nuevo mensaje al arreglo de mensajes
-            setNuevoMensaje("");
-            document.getElementById("send-mess").value = ""
-          }
+        socket.on('message', (msg) => {
+            setMessages([...messages, msg]);
+        });
+      }, [messages]);
+
+    const handleMessage = (e) => {
+        e.preventDefault()
+        if(buttonS) {
+            socket.emit('message', buttonS);
+            setButtonS('');
+        }
     }
 
-  return (
-    <div className="cnt-cards-c">
-        <div className="cnt-chat-c">
-            {mensajes.map((mensaje, index) => (
-                <div className='cntm-messa' key={index}>
-                    <div className={`mensaje ${mensaje.autor === "Proveedor" ? "proveedor" : "cliente"}`}>
-                        {mensaje.contenido}
+    const handleButton = (id) => {
+        setButtonS({
+            id: messages?.[messages.length - 1]?.id,
+            text: id,
+            author: 'cliente'
+        })
+    }
+
+    return (
+        <div className="cnt-cards-c">
+            <div className="cnt-chat-c">
+                {messages&&messages.map((mensaje, index) => (
+                    <div className='cntm-messa' key={index}>
+                        <div className={`mensaje ${mensaje.author === "proveedor" ? "proveedor" : "cliente"}`}>
+                            {mensaje.text}
+                        </div>
+                        <label className={`hours-r ${mensaje.author === "proveedor" ? "labelpr" : "labelcli"}`}>{mensaje.day}</label>
                     </div>
-                    <label className={`hours-r ${mensaje.autor === "Proveedor" ? "labelpr" : "labelcli"}`}>{mensaje.tiempo.toLocaleTimeString()}</label>
+                ))}
+            </div>
+            <div className="cnt-input">
+                {/* <input type="text" placeholder='Escribe aquí...' className='input-t' id="send-mess" onChange={(e) => setNuevoMensaje(e.target.value)}/> */}
+                <div className='Options'>
+                    <div className={`TextFrequent ${buttonS.text === 'Frecuentemente' ? 'TextFrequentH' : ''}`} onClick={() => handleButton('Frecuentemente')} >Frecuentemente</div>
+                    <div className={`TextSome ${buttonS.text === 'Algunas veces' ? 'TextSomeH' : ''}`} onClick={() => handleButton('Algunas veces')} >Algunas veces</div>
+                    <div className={`Never ${buttonS.text === 'Nunca' ? 'NeverH' : ''}`} onClick={() => handleButton('Nunca')} >Nunca</div>
                 </div>
-            ))}
+                <img src={Send} alt="" className='s-send' onClick={handleMessage} id="idMyImage"/>
+            </div>
         </div>
-        <div className="cnt-input">
-            <input type="text" placeholder='Escribe aquí...' className='input-t' id="send-mess" onChange={(e) => setNuevoMensaje(e.target.value)}/>
-            <img src={Send} alt="" className='s-send' onClick={handleMessage} ref={buttonRef} id="idMyImage"/>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default ChatAlkimia
