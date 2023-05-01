@@ -98,7 +98,7 @@ const Header = ({ auth }) => {
                                 </NavLink>
                                 <NavLink
                                     className="linkA"
-                                    to="/hosts"
+                                    to="/tips"
                                     style={navLinks}
                                 >
                                     Tips
@@ -137,7 +137,7 @@ const Header = ({ auth }) => {
                         <NavLink className="linkA" to="/" style={navLinks}>
                             Inicio
                         </NavLink>
-                        <NavLink className="linkA" to="/hosts" style={navLinks}>
+                        <NavLink className="linkA" to="/tips" style={navLinks}>
                             Tips
                         </NavLink>
                         <NavLink className="linkA" to="blog" style={navLinks}>

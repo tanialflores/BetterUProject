@@ -1,45 +1,37 @@
 import React, { useEffect, useState } from "react";
 import InputSearch from "../../../components/atoms/InputSearch/InputSearch";
 
-import Apoyo from "../../../assets/icons/apoyo.svg";
-import Grape from "../../../assets/icons/grape.svg";
-import Shape from "../../../assets/icons/Shape.svg";
-import Pago from "../../../assets/icons/pago.svg";
-import Vino from "../../../assets//icons/vino.png";
+import trastornoAlimenticio from "../../../assets/guest/trastornoAlimenticio.png";
+import depresion from "../../../assets/guest/depresion.png";
+import ansiedad from "../../../assets/guest/ansiedad.png";
+import logoSinFondo from "../../../assets/guest/logoSinFondo.png"
 
 import "./LandingPage.scss";
 import { Skeleton } from "primereact/skeleton";
 
 const LandingSkeleton = () => {
 
-    const helpTravel = [
+    const trastornos = [
         {
             id: 1,
-            img: Grape,
-            title: "Viñedos Mexicanos",
+            img: depresion,
+            title: "Depresión",
             descriptions:
-                "Encuentra cientos de experiencias de enoturismo en todo México",
+                "La depresión es una enfermedad que se caracteriza por una tristeza persistente y por la pérdida de interés en las actividades con las que normalmente se disfruta, así como por la incapacidad para llevar a cabo las actividades cotidianas, durante al menos dos semanas.",
         },
         {
             id: 2,
-            img: Shape,
-            title: "Arma tu ruta",
+            img: ansiedad,
+            title: "Ansiedad",
             descriptions:
-                "Comienza a crear tus propias rutas con nuestras sugerencias de experiencias cercanas a tu destino",
+                "La ansiedad es una emoción normal que se experimenta en situaciones en las que el sujeto se siente amenazado por un peligro externo o interno.",
         },
         {
             id: 3,
-            img: Pago,
-            title: "Pago seguro",
+            img: trastornoAlimenticio,
+            title: "Trastorno alimenticio",
             descriptions:
-                "Reserva y paga desde la app con un proceso fácil y confiable",
-        },
-        {
-            id: 4,
-            img: Apoyo,
-            title: "Soporte",
-            descriptions:
-                "Si necesitas ayuda nuestros expertos estarán disponibles todo el tiempo para guiarte a los mejores destinos",
+                "Los trastornos de la alimentación, también llamados trastornos de la conducta alimentaria, son enfermedades médicas graves con una influencia biológica que se caracterizan por alteraciones graves de las conductas alimentarias.",
         },
     ];
 
@@ -49,7 +41,7 @@ const LandingSkeleton = () => {
             <div className="LandingPage">
                 <div className="subLandingPage">
                     <img
-                        src={Vino}
+                        src={logoSinFondo}
                         alt="background"
                         className="sub-background"
                     />
@@ -59,7 +51,7 @@ const LandingSkeleton = () => {
                     </div>
                 </div>
                 <div className="page-secct2">
-                    {helpTravel.map((item) => (
+                    {trastornos.map((item) => (
                         <div key={item.id} className="secct2-card">
                             <Skeleton className="secct-2-card-img" />
                             <Skeleton className="secct2-title" />

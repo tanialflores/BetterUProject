@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
 import Share from "../../../assets/icons/share.svg";
-import Eye from "../../../assets/icons/eye.svg";
-import Message from "../../../assets/icons/message.svg";
-
 import "./CardViewShort.scss";
 
 const CardViewShort = ({ elements, setElements }) => {
@@ -45,13 +42,6 @@ const CardViewShort = ({ elements, setElements }) => {
                                 <br />
                                 <span className="secct-2-date">{crd.date}</span>
                             </div>
-
-                            <img
-                                src={crd.icon}
-                                alt="Share"
-                                className="card-a-puntos"
-                                onClick={() => OpenShareModal(crd.id)}
-                            />
                         </div>
 
                         {openShare == crd.id && (
@@ -89,29 +79,7 @@ const CardViewShort = ({ elements, setElements }) => {
                                     activeHeart(crd.id);
                                 }}
                             />
-                            <div className="secct-2-viewss">
-                                <div className="Eye-container">
-                                    <img
-                                        src={Eye}
-                                        alt="View"
-                                        className="ViewEye"
-                                    />
-                                    <p className="viewsNumber">12</p>
-                                </div>
-                                <div className="Message-container">
-                                    <img
-                                        src={Message}
-                                        alt="View"
-                                        className="ViewEye"
-                                    />
-                                    <p className="viewsNumber">12</p>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-
-                    <div className="secct-2-btn-cont" onClick={() => {}}>
-                        Leer
                     </div>
                 </div>
             ))}

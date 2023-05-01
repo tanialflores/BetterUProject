@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import InputSearch from "../../../components/atoms/InputSearch/InputSearch";
 import Button from "../../../components/atoms/Button/Button";
 
 //assets
@@ -42,7 +41,7 @@ const LandingPage = () => {
 
     const navigate = useNavigate()
 
-    const helpTravel = [
+    const trastornos = [
         {
             id: 1,
             img: depresion,
@@ -88,7 +87,7 @@ const LandingPage = () => {
         
     ];
 
-    const vinedo = [
+    const CarouselSabias = [
         {
             id: 1,
             img: c8,
@@ -171,7 +170,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="page-secct2">
-                    {helpTravel.map((item) => (
+                    {trastornos.map((item) => (
                         <div key={item.id} className="secct2-card">
                             <img
                                 src={item.img}
@@ -222,7 +221,7 @@ const LandingPage = () => {
                     
                     <div className="secct-6-B">
                         <h1 className="secct-6-B-title">¿Sabías qué?</h1>
-                        <Carousel object={vinedo}/>
+                        <Carousel object={CarouselSabias}/>
                     </div>
                     
                 </div>
