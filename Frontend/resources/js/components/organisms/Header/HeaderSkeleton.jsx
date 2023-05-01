@@ -96,7 +96,7 @@ const HeaderSkeleton = ({ className }) => {
                                 </NavLink>
                                 <NavLink
                                     className="linkA"
-                                    to="/hosts"
+                                    to="/tips"
                                     style={navLinks}
                                 >
                                     Anfitriones

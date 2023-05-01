@@ -97,12 +97,12 @@ const CardViews = ({ elements, setElements }) => {
                             }}
                         />
                     </div>
-                    <div
+                    {/* <div
                         className="secct-2-btn-cont"
                         onClick={() => navigate(`${crd.id}/show`)}
                     >
                         Leer
-                    </div>
+                    </div> */}
                 </div>
             ))}
         </div>
