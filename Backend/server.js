@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
 
   socket.on('message', (msg) => {
     io.emit('message', msg)
-    console.log('msg', msg);
+    
     if(msg.id === 1) io.emit('message', test[1])
     if(msg.id === 2) io.emit('message', test[2])
     if(msg.id === 3) io.emit('message', test[3])
