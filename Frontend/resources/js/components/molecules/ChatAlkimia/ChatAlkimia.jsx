@@ -30,11 +30,14 @@ const ChatAlkimia = ({}) => {
     }
 
     const handleButton = (id) => {
-        setButtonS({
-            id: messages?.[messages.length - 1]?.id,
-            text: id,
-            author: 'cliente'
-        })
+        console.log('123', messages.length);
+        if(messages.length <= 126){
+            setButtonS({
+                id: messages?.[messages.length - 1]?.id,
+                text: id,
+                author: 'cliente'
+            })
+        }
     }
 
     return (
