@@ -5,7 +5,7 @@ const { sequelize } = require('./database')
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://127.0.0.1:8001', // Reemplaza con la URL de tu aplicación de React
+    origin: 'http://localhost:8002', // Reemplaza con la URL de tu aplicación de React
     methods: ['GET', 'POST'],
     allowedHeaders: ['my-custom-header'],
     credentials: true
@@ -44,6 +44,7 @@ io.on('connection', (socket) => {
 
   socket.on('message', (msg) => {
     io.emit('message', msg)
+    
     if(msg.id === 1) io.emit('message', test[1])
     if(msg.id === 2) io.emit('message', test[2])
     if(msg.id === 3) io.emit('message', test[3])
@@ -107,6 +108,7 @@ io.on('connection', (socket) => {
     if(msg.id === 61) io.emit('message', test[61])
     if(msg.id === 62) io.emit('message', test[62])
     if(msg.id === 63) io.emit('message', test[63])
+    if(msg.id === 64) io.emit('message', test[64])
   })
 
 });
