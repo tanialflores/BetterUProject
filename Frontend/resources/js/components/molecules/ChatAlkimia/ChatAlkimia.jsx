@@ -3,9 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 //Assets
 import Send from '../../../assets/Auth/send.svg'
-
 import "./ChatAlkimia.scss"
-
 import io from 'socket.io-client';
 
 const socket = io('http://localhost:8000');
